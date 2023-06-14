@@ -1,0 +1,500 @@
+<mxfile host="65bd71144e">
+    <diagram id="aeEa7EJ5LEVuPvEAdL8i" name="Page-1">
+        <mxGraphModel dx="1427" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="76" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=default;fontSize=14;fontColor=#f7f8f7;fillColor=#CCFFCC;gradientColor=#7ACC7A;glass=0;gradientDirection=north;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="1020.5" y="778" width="393" height="354" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1510" y="201" width="540" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="1510" y="201" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="1516" y="207" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="1530" y="207" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="1545" y="207" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;font color=&quot;#bdbbbb&quot;&gt;Home site&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1503" y="177" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1510" y="231" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;HOME&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SUN SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MOON SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;RISING SIGN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;USERS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PROFILE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="1520" y="226" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="878.5" y="47" width="540" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;b&gt;&lt;font size=&quot;1&quot; color=&quot;#f7f8f7&quot; style=&quot;&quot;&gt;&lt;u style=&quot;font-size: 14px;&quot;&gt;STRETCH GOALS NOT PICTURED IN WIREFRAME&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="1035.5" y="793" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-Make sun/ moon/ rising navbar items drop downs to&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;navigate&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;to differrent pages&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;-Make some navbar items icons&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-User search&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;add search bar to user page&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-Diary entries&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- &lt;/font&gt;Add Friends / &quot;people to my sphere&quot;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;add navbar option &quot;My Sphere&quot;&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;add button on profile view to aslo link to &quot;My sphere&quot;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;add button to add someone from users page&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;-See compatability of friends&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;add compatability to profile view&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;-Confirm delete account&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#f7f8f7;" vertex="1" parent="1">
+                    <mxGeometry x="1035.5" y="804" width="330" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="endArrow=classic;html=1;fontSize=14;fontColor=#f7f8f7;dashed=1;dashPattern=8 8;fillColor=#cdeb8b;strokeColor=#7ACC7A;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1670" y="230" as="sourcePoint"/>
+                        <mxPoint x="1430" y="150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1640" y="150"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="72" value="&lt;span style=&quot;color: rgb(189, 187, 187); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(42, 37, 47); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Users&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=14;fontColor=#f7f8f7;" vertex="1" parent="1">
+                    <mxGeometry x="2147.5" y="398" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="&lt;font color=&quot;#bdbbbb&quot;&gt;Moon Signs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="879.5" y="398" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;strokeColor=none;fontSize=14;fillColor=#ffcccc;shadow=1;gradientColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="1690" y="297" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="CELESTIAL SPHERE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontSize=26;fontColor=#CEB3EB;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="1615" y="357" width="310" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#36393d;fontFamily=Verdana;fontSize=26;fillColor=#eeeeee;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="839" y="294" width="151" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="&lt;p style=&quot;line-height: 20%;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;For stretch goal, there will be only one sign on this page based on selected dropdown sign&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=26;fontColor=#666666;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="875.5" y="328" width="97" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="THE SUN SIGNS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Georgia;fontSize=11;fontColor=#000000;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="893.5" y="97" width="520" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Date range:&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;Element:&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;Ruling Planet:&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Traits:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Love compatibility:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Friendship compatibility:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Symbol:&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="943.5" y="147" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="ARIES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="973.5" y="144" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Date range:&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Element:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Ruling Planet:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Traits:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Love compatibility:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Friendship compatibility:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Symbol:&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="1093.5" y="147" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="TAURUS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1118.5" y="144" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Date range:&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Element:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Ruling Planet:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Traits:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Love compatibility:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Friendship compatibility:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Symbol:&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="1242.5" y="147" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="GEMINI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1268.5" y="144" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="933.5" y="247" width="440" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="" style="endArrow=none;html=1;strokeColor=#000000;fontFamily=Georgia;fontSize=10;fontColor=#000000;endFill=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1153" y="295" as="sourcePoint"/>
+                        <mxPoint x="1153.5" y="257" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="110" value="REPEAT FOR ALL SIGNS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1083.5" y="297" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="Your sun sign represents...." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1033.5" y="110" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1512" y="541" width="540" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="1512" y="541" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="1518" y="547" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="1532" y="547" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="1547" y="547" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="422" width="540" height="306" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="422" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="2149.5" y="428" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="2163.5" y="428" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="160" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="2178.5" y="428" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="161" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="452" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="162" value="&lt;font color=&quot;#666666&quot; style=&quot;font-size: 10px;&quot;&gt;HOME&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SUN SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MOON SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;RISING SIGN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;USERS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PROFILE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="2158.5" y="447" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="165" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="879.5" y="422" width="540" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="166" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="879.5" y="422" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="167" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="885.5" y="428" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="899.5" y="428" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="169" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="914.5" y="428" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="170" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="879.5" y="452" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="171" value="&lt;font color=&quot;#666666&quot; style=&quot;font-size: 10px;&quot;&gt;HOME&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SUN SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MOON SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;RISING SIGN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;USERS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PROFILE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="894.5" y="447" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="172" value="List Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;fontSize=14;fontColor=#f7f8f7;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="1139.5" y="668" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="174" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;Element:&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Traits:&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;Symbol:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="929.5" y="528" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="175" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Georgia; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;ARIES&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="954.5" y="528" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="176" value="THE MOON SIGNS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Georgia;fontSize=11;fontColor=#000000;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="889" y="478" width="520" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="177" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Georgia; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Your moon sign represents....&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1009.5" y="496" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;Element:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Traits:&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;Symbol:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1084.5" y="528" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;Element:&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Traits:&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Symbol:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1239.5" y="528" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="180" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="924.5" y="628" width="440" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" value="" style="endArrow=none;html=1;strokeColor=#000000;fontFamily=Georgia;fontSize=10;fontColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1144.5" y="678" as="sourcePoint"/>
+                        <mxPoint x="1144" y="638" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="182" value="REPEAT FOR ALL SIGNS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1074.5" y="678" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" value="TAURUS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1109.5" y="525" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="184" value="GEMINI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1264.5" y="528" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="42" width="540" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="42" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="2149.5" y="48" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="2163.5" y="48" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="192" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="2178.5" y="48" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="72" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="&lt;font color=&quot;#666666&quot; style=&quot;font-size: 10px;&quot;&gt;HOME&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SUN SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MOON SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;RISING SIGN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;USERS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PROFILE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="2158.5" y="67" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Element:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Traits:&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Symbol:&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2363.5" y="148" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" value="THE RISING SIGNS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Georgia;fontSize=11;fontColor=#000000;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2153.5" y="98" width="520" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="198" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Georgia; font-size: 10px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Your rising sign represents....&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="2263.5" y="116" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="199" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Element:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Traits:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Symbol:&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2513.5" y="148" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="200" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Element:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Traits:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Symbol:&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2213.5" y="148" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="201" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2203.5" y="248" width="440" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="202" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Georgia; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;ARIES&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="2238.5" y="148" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="203" value="TAURUS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="2388.5" y="148" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="207" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#36393d;fontFamily=Verdana;fontSize=26;fillColor=#eeeeee;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2105" y="288" width="151" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="204" value="GEMINI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="2528.5" y="148" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="205" value="" style="endArrow=none;html=1;strokeColor=#000000;fontFamily=Georgia;fontSize=10;fontColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2423" y="298" as="sourcePoint"/>
+                        <mxPoint x="2423" y="258" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2423" y="288"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="206" value="REPEAT FOR ALL SIGNS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="2353.5" y="298" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" value="&lt;p style=&quot;line-height: 20%;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;For stretch goal, there will be only one sign on this page based on selected dropdown sign&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=26;fontColor=#666666;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="2138" y="324" width="97" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="endArrow=classic;html=1;dashed=1;dashPattern=8 8;strokeColor=#7ACC7A;fontSize=14;fontColor=#f7f8f7;exitX=0.65;exitY=1.2;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="14">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1890" y="137" as="sourcePoint"/>
+                        <mxPoint x="2130" y="147" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1950" y="147"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="209" value="&lt;font color=&quot;#bdbbbb&quot;&gt;Rising signs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2136.25" y="20" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="210" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="798" width="540" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="211" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="798" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="212" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="2149.5" y="804" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="213" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="2163.5" y="804" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="214" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="2178.5" y="804" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="215" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2143.5" y="828" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="216" value="&lt;font color=&quot;#666666&quot; style=&quot;font-size: 10px;&quot;&gt;HOME&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SUN SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MOON SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;RISING SIGN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;USERS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PROFILE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="2158.5" y="823" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="220" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#36393d;fontFamily=Verdana;fontSize=26;fillColor=#eeeeee;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="842" y="668" width="151" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="&lt;p style=&quot;line-height: 20%;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;For stretch goal, there will be only one sign on this page based on selected dropdown sign&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=26;fontColor=#666666;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="871" y="704" width="97" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="221" value="" style="endArrow=classic;html=1;dashed=1;dashPattern=8 8;strokeColor=#7ACC7A;fontFamily=Georgia;fontSize=10;fontColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2000" y="257" as="sourcePoint"/>
+                        <mxPoint x="2130" y="467" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2010" y="377"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="224" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#36393d;fontFamily=Verdana;fontSize=26;fillColor=#eeeeee;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2104" y="674" width="151" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="225" value="&lt;p style=&quot;line-height: 20%;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;For stretch goal, add search for users, or maybe click on user to view details on new page&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=26;fontColor=#666666;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="2135" y="711" width="97" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="228" value="Click to discover your signs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Georgia;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1510" y="472" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="230" value="" style="endArrow=classic;html=1;dashed=1;dashPattern=8 8;strokeColor=#7ACC7A;fontFamily=Georgia;fontSize=10;fontColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1607" y="496" as="sourcePoint"/>
+                        <mxPoint x="1570.3207547169814" y="577" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="232" value="Note: link to external&lt;br&gt;chart creator" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=0;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#000000;fillColor=#CCFFCC;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="1486" y="577" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="233" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Sun:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Moon:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Rising:&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2178.5" y="510" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="234" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Georgia; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;NAME&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;labelBackgroundColor=none;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="2203.5" y="510" width="70" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="235" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Sun:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Moon:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Rising:&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2523.5" y="510" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="236" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Sun:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Moon:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;Rising:&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#b188dd;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2353.5" y="510" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="237" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Georgia; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;NAME&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;labelBackgroundColor=none;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="2378.5" y="510" width="70" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="238" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Georgia; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;NAME&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;labelBackgroundColor=none;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="2548.5" y="508" width="70" height="39" as="geometry"/>
+                </mxCell>
+                <mxCell id="239" value="" style="endArrow=classic;html=1;dashed=1;dashPattern=8 8;strokeColor=#7ACC7A;fontFamily=Georgia;fontSize=10;fontColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1930" y="252" as="sourcePoint"/>
+                        <mxPoint x="2130" y="840" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1950" y="677"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="247" value="USERS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Georgia;fontSize=11;fontColor=#000000;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2153.5" y="471" width="520" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="endArrow=classic;html=1;fontSize=14;fontColor=#f7f8f7;dashed=1;dashPattern=8 8;fillColor=#cdeb8b;strokeColor=#7ACC7A;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1760" y="250" as="sourcePoint"/>
+                        <mxPoint x="1430" y="460" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1620" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="248" value="&lt;span style=&quot;color: rgb(189, 187, 187); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Profile: &quot;ViewProfile&quot;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2149.5" y="778" width="130.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="249" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="878" y="47" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="250" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="884" y="53" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="251" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="898" y="53" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="252" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="913" y="53" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="253" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="878" y="77" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="254" value="&lt;font color=&quot;#666666&quot; style=&quot;font-size: 10px;&quot;&gt;HOME&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SUN SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MOON SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;RISING SIGN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;USERS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PROFILE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="888" y="72" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="255" value="&lt;font color=&quot;#bdbbbb&quot;&gt;Sun Signs&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="880.5" y="24" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="258" value="&lt;font color=&quot;#000000&quot;&gt;IMG&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=1;glass=0;labelBackgroundColor=none;strokeColor=#36393d;fontFamily=Georgia;fontSize=12;fillColor=#ffcccc;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2298.5" y="860" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="259" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;My Sun:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;My Moon:&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;My Rising:&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=default;fontFamily=Georgia;fontSize=11;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#B188DD;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2427" y="860" width="101.5" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="267" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;Sun in...(user sun sign)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;user sun sign traits&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;Moon in... (user moon sign)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;user moon sign traits&lt;br/&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;Rising in... (user rising sign)&lt;br/&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;user rising sign traits&#9;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=12;fontColor=#000000;fillColor=#CEB3EB;gradientColor=#B188DD;gradientDirection=north;opacity=90;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="2157" y="950" width="511.5" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="268" value="&lt;p style=&quot;line-height: 20%;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;strokeColor=#36393d;fontFamily=Verdana;fontSize=26;fillColor=#eeeeee;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2101.5" y="1044" width="151" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="270" value="&lt;p style=&quot;line-height: 20%;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 11px;&quot;&gt;For stretch goal, add friend compatibility section&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=26;fontColor=#666666;opacity=70;" vertex="1" parent="1">
+                    <mxGeometry x="2129.25" y="1080" width="97" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="271" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Edit Profile&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=12;fontColor=#666666;fillColor=#CCE5FF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2570" y="1070" width="61.5" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="273" value="" style="endArrow=classic;html=1;dashed=1;dashPattern=8 8;strokeColor=#7ACC7A;fontFamily=Georgia;fontSize=10;fontColor=#666666;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2625" y="1094" as="sourcePoint"/>
+                        <mxPoint x="2670" y="1150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="275" value="When &quot;Edit Profile&quot; is clicked, page&lt;br&gt;re-renders to EditProfile" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};shadow=1;glass=0;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#666666;fillColor=#FFFFFF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" collapsed="1" parent="1">
+                    <mxGeometry x="2693.5" y="1028" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="276" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;fontFamily=Georgia;fontSize=10;fontColor=#666666;strokeColor=#7ACC7A;fillColor=#a20025;" edge="1" target="275" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2633.5" y="1080" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="278" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="2226.5" y="1158" width="540" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="279" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+                    <mxGeometry x="2226.5" y="1158" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="280" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC0000;" vertex="1" parent="1">
+                    <mxGeometry x="2232.5" y="1164" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="281" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="2246.5" y="1164" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="282" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="2261.5" y="1164" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="288" value="&lt;span style=&quot;color: rgb(189, 187, 187); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Profile: &quot;EditProfile&quot;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Georgia;fontColor=#000000;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2232.5" y="1138" width="130.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="290" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="2226.25" y="1190" width="540" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="292" value="&lt;font color=&quot;#666666&quot; style=&quot;font-size: 10px;&quot;&gt;HOME&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SUN SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MOON SIGNS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;RISING SIGN&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;USERS&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PROFILE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#BDBBBB;" vertex="1" parent="1">
+                    <mxGeometry x="2241.25" y="1185" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="293" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Submit&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=12;fontColor=#666666;fillColor=#CCE5FF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2256.5" y="1400" width="283.5" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="294" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Cancel&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=12;fontColor=#666666;fillColor=#CCE5FF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2683.5" y="1400" width="61.5" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="297" value="text" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#666666;fillColor=#FFFFFF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2333.5" y="1222" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="298" value="text" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#666666;fillColor=#FFFFFF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2333.5" y="1258" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="299" value="drop down" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#666666;fillColor=#FFFFFF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2333.5" y="1293" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="300" value="drop down" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#666666;fillColor=#FFFFFF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2333.5" y="1363" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="302" value="drop down" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#666666;fillColor=#FFFFFF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2333.5" y="1329" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="303" value="First Name:&lt;br&gt;&lt;br&gt;&lt;br&gt;Last Name:&lt;br&gt;&lt;br&gt;&lt;br&gt;Sun Sign:&lt;br&gt;&lt;br&gt;&lt;br&gt;Moon Sign&lt;br&gt;&lt;br&gt;&lt;br&gt;Rising Sign" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;fontFamily=Georgia;fontSize=10;fontColor=#666666;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2256" y="1288" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="306" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Delete profile&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=12;fontColor=#666666;fillColor=#CCE5FF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" parent="1">
+                    <mxGeometry x="2363.5" y="1430" width="283.5" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="307" value="" style="endArrow=classic;html=1;strokeColor=#7ACC7A;fontFamily=Georgia;fontSize=10;fontColor=#666666;dashed=1;dashPattern=8 8;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2252.5" y="1410" as="sourcePoint"/>
+                        <mxPoint x="2130" y="1030" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2080" y="1130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="309" value="When &quot;Cancel&quot; is clicked, page&lt;br&gt;re-renders to ViewProfile" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};shadow=1;glass=0;labelBackgroundColor=none;strokeColor=#0a0a0a;fontFamily=Georgia;fontSize=10;fontColor=#666666;fillColor=#FFFFFF;gradientColor=none;gradientDirection=north;opacity=90;" vertex="1" collapsed="1" parent="1">
+                    <mxGeometry x="2779.5" y="1379" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="310" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;fontFamily=Georgia;fontSize=10;fontColor=#666666;strokeColor=#7ACC7A;fillColor=#d80073;" edge="1" target="309" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2745" y="1409" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
