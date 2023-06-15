@@ -7,13 +7,25 @@ export const NavBar = () => {
     return (
         <ul className="navbar">
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/tickets">Tickets</Link>
+                <Link className="navbar__link" to="/SunSigns">Sun Signs</Link>
+            </li>
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/MoonSigns">Moon Signs</Link>
+            </li>
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/RisingSigns">Rising Signs</Link>
+            </li>
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/Users">Users</Link>
+            </li>
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/Profile/${firstName}${lastName}">Profile</Link>
             </li>
             {
-                localStorage.getItem("honey_user")
+                localStorage.getItem("celestial_user")
                     ? <li className="navbar__item navbar__logout">
                         <Link className="navbar__link" to="" onClick={() => {
-                            localStorage.removeItem("honey_user")
+                            localStorage.removeItem("celestial_user")
                             navigate("/", {replace: true})
                         }}>Logout</Link>
                     </li>

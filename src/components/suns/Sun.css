@@ -1,0 +1,11 @@
+.sunSigns {
+    display: flex;
+    flex-direction: column;
+}
+
+.sunSign {
+    background-color: lightsalmon;
+    border: 2px dotted darkred;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+}
