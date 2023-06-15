@@ -26,6 +26,7 @@ export const SunList = () => {
                             <div>Dates: {sunSign.dates}</div>
                             <div>Element: {sunSign.element}</div>
                             <div>Ruling Planet: {sunSign.rulingPlanet}</div>
+                            <div>Traits: {sunSign.trait}</div>
                             <div>Symbol: {sunSign.symbol}</div>
                         </section>
                     }
