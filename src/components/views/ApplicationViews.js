@@ -1,5 +1,6 @@
 import { Outlet, Route, Routes } from "react-router-dom"
 import { SunList } from "../suns/SunsList.js"
+import { MoonList } from "../moons/MoonsList.js"
 
 
 
@@ -16,7 +17,7 @@ export const ApplicationViews = () => {
 			}>
 
 				<Route path="/SunSigns" element={<SunList />}></Route>
-
+				<Route path="/MoonSigns" element={<MoonList />}></Route>
 			</Route>
 		</Routes>
 	)
