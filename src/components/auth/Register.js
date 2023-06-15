@@ -4,9 +4,12 @@ import "./Login.css"
 
 export const Register = (props) => {
     const [user, setUser] = useState({
-        email: "",
         firstName: "",
-        lastName: ""
+        lastName: "",
+        email: "",
+        sunSignId: "",
+        moonSignId:"",
+        risingSignId:"",
     })
     let navigate = useNavigate()
 
@@ -57,7 +60,7 @@ export const Register = (props) => {
             <form className="form--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for Celestial Sphere</h1>
                 <fieldset>
-                    <label htmlFor="fullName"> First Name </label>
+                    <label htmlFor="firstName"> First Name </label>
                     <input onChange={updateUser}
                            type="text" id="firstName" className="form-control"
                            placeholder="Enter your first name" required autoFocus />
@@ -65,7 +68,7 @@ export const Register = (props) => {
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>
                     <input onChange={updateUser}
-                        type="text" id="fullName" className="form-control"
+                        type="text" id="lastName" className="form-control"
                         placeholder="Enter your last name" required autoFocus />
                 </fieldset>
                 <fieldset>
