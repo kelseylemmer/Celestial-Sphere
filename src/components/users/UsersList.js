@@ -22,10 +22,10 @@ export const UserList = () => {
                 users.map(
                     (user) => {
                         return <section className="user">
-                            <header>{user.firstName}{user.lastName}</header>
-                            <div>Element: {risingSign.element}</div>
-                            <div>Trait: {risingSign.trait}</div>
-                            <div>Symbol: {risingSign.symbol}</div>
+                            <header>{user.firstName} {user.lastName}</header>
+                            <div>Sun: {user?.sunSign?.name}</div>
+                            <div>Moon: {user?.moonSign?.name}</div>
+                            <div>Rising: {user?.risingSign?.name}</div>
                         </section>
                     }
                 )
