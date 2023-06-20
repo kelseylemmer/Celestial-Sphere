@@ -21,7 +21,7 @@ export const RisingList = () => {
             {
                 risingSigns.map(
                     (risingSign) => {
-                        return <section className="risingSign">
+                        return <section className="risingSign" key={`${risingSign.id}`}>
                             <header>{risingSign.name}</header>
                             <div>Element: {risingSign.element}</div>
                             <div>Trait: {risingSign.trait}</div>

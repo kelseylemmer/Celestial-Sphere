@@ -21,7 +21,7 @@ export const UserList = () => {
             {
                 users.map(
                     (user) => {
-                        return <section className="user">
+                        return <section className="user" key={`${user.id}`}>
                             <header>{user.firstName} {user.lastName}</header>
                             <div>Sun: {user?.sunSign?.name}</div>
                             <div>Moon: {user?.moonSign?.name}</div>

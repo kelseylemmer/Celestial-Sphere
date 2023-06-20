@@ -7,6 +7,9 @@ export const NavBar = () => {
     return (
         <ul className="navbar">
             <li className="navbar__item active">
+                <Link className="navbar__link" to="/Home">Home</Link>
+            </li>
+            <li className="navbar__item active">
                 <Link className="navbar__link" to="/SunSigns">Sun Signs</Link>
             </li>
             <li className="navbar__item active">
@@ -18,9 +21,13 @@ export const NavBar = () => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/Users">Users</Link>
             </li>
-            <li className="navbar__item active">
-                <Link className="navbar__link" to="/Profile/${firstName}${lastName}">Profile</Link>
-            </li>
+            {
+                localStorage.getItem("celestial_user")
+                    ?<li className="navbar__item active">
+                        <Link className="navbar__link" to="/Profile/${celestial_user.id}">Profile</Link>
+                    </li>
+                    :""
+            }
             {
                 localStorage.getItem("celestial_user")
                     ? <li className="navbar__item navbar__logout">

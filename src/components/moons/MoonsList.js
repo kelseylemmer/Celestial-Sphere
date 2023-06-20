@@ -21,7 +21,7 @@ export const MoonList = () => {
             {
                 moonSigns.map(
                     (moonSign) => {
-                        return <section className="moonSign">
+                        return <section className="moonSign" key={`${moonSign.id}`}>
                             <header>{moonSign.name}</header>
                             <div>Element: {moonSign.element}</div>
                             <div>Trait: {moonSign.trait}</div>
