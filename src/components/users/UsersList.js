@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./User.css"
+import { Link } from "react-router-dom"
 
 export const UserList = () => {
     const [users, setUsers] = useState([])
@@ -22,7 +23,7 @@ export const UserList = () => {
                 users.map(
                     (user) => {
                         return <section className="user" key={`${user.id}`}>
-                            <header>{user.firstName} {user.lastName}</header>
+                            <header><Link to={`/Profile/${user.id}`}>{user.firstName} {user.lastName}</Link></header>
                             <div>Sun: {user?.sunSign?.name}</div>
                             <div>Moon: {user?.moonSign?.name}</div>
                             <div>Rising: {user?.risingSign?.name}</div>

@@ -3,6 +3,7 @@ import { SunList } from "../suns/SunsList.js"
 import { MoonList } from "../moons/MoonsList.js"
 import { RisingList } from "../risings/RisingsList.js"
 import { UserList } from "../users/usersList.js"
+import { Profile } from "../profile/Profile.js"
 
 
 
@@ -23,6 +24,7 @@ export const ApplicationViews = () => {
 				<Route path="/MoonSigns" element={<MoonList />}></Route>
 				<Route path="/RisingSigns" element={<RisingList />}></Route>
 				<Route path="/Users" element={<UserList />}></Route>
+				<Route path="/Profile/:profileId" element={<Profile />}></Route>
 			</Route>
 		</Routes>
 	)
