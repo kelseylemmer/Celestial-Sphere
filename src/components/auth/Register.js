@@ -7,9 +7,9 @@ export const Register = (props) => {
         firstName: "",
         lastName: "",
         email: "",
-        sunSignId: "",
-        moonSignId:"",
-        risingSignId:"",
+        sunSignId: 0,
+        moonSignId:0,
+        risingSignId:0,
     })
     let navigate = useNavigate()
 

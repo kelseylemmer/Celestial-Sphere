@@ -45,16 +45,15 @@ export const Profile = () => {
 
     return (
         <div>
-            <h1>Profile</h1>
+            {isEditMode ? (
+                <EditProfile data={profileData} onSubmit={submitEditProfile}  />
+            ) : (
+                <ViewProfile data={profileData} />
+            )}
             {canEdit && (
                 <button onClick={toggleEditMode}>
                     {isEditMode ? "Cancel" : "Edit profile"}
                 </button>
-            )}
-            {isEditMode ? (
-                <EditProfile data={profileData} onSubmit={submitEditProfile} />
-            ) : (
-                <ViewProfile data={profileData} />
             )}
         </div>
     );
