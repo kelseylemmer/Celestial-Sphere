@@ -4,6 +4,7 @@ import { MoonList } from "../moons/MoonsList.js"
 import { RisingList } from "../risings/RisingsList.js"
 import { UserList } from "../users/usersList.js"
 import { Profile } from "../profile/Profile.js"
+import { ProfileForm } from "../profile/CreateProfileForm.js"
 
 
 
@@ -25,6 +26,7 @@ export const ApplicationViews = () => {
 				<Route path="/RisingSigns" element={<RisingList />}></Route>
 				<Route path="/Users" element={<UserList />}></Route>
 				<Route path="/Profile/:profileId" element={<Profile />}></Route>
+				<Route path="/CreateProfile" element={<ProfileForm />}></Route>
 			</Route>
 		</Routes>
 	)

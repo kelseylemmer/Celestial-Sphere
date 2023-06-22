@@ -6,10 +6,7 @@ export const Register = (props) => {
     const [user, setUser] = useState({
         firstName: "",
         lastName: "",
-        email: "",
-        sunSignId: 0,
-        moonSignId:0,
-        risingSignId:0,
+        email: ""
     })
     let navigate = useNavigate()
 

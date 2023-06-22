@@ -18,10 +18,7 @@ export const Login = () => {
                     localStorage.setItem("celestial_user", JSON.stringify({
                         id: user.id,
                         firstName: user.firstName,
-                        lastName: user.lastName,
-                        sunSignId: user.sunSignId,
-                        moonSignId: user.moonSignId,
-                        risingSignId: user.risingSignId
+                        lastName: user.lastName
                     }))
 
                     navigate("/")
