@@ -169,7 +169,7 @@ export const ProfileForm = () => {
             <button
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
                 className="btn btn-primary">
-                Submit Product
+                Submit Profile
             </button>
         </form>
     )

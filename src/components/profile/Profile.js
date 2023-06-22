@@ -20,6 +20,7 @@ export const Profile = () => {
 
   const [isEditMode, setIsEditMode] = useState(false);
   const [profileData, setProfileData] = useState(null);
+  const [isBlank, setisBlank] = useState(false);
 
   const toggleEditMode = () => {
     setIsEditMode(!isEditMode);
@@ -27,13 +28,17 @@ export const Profile = () => {
 
   useEffect(
     () => {
-      fetch(`http://localhost:8088/profiles/${profileId}?_expand=sunSign&_expand=moonSign&_expand=risingSign`)
+      fetch(`http://localhost:8088/profiles/${profileId}?_expand=sunSign&_expand=moonSign&_expand=risingSign&_expand=user`)
         .then(response => response.json())
         .then((data) => {
+          (Object.keys(data).length === 0) ? setisBlank(true)
+            : 
           setProfileData(data)
+
         })
     },
     [profileId]
+    // [isBlank]
   )
 
   const handleButtonClick = () => {
@@ -47,22 +52,35 @@ export const Profile = () => {
     // TODO: When done, use setProfileData to set it to the new data
   }
 
-  if (!profileData) {
-    return <Button onClick={handleButtonClick} text="Go to Form" />
-  }
+  // if (Object.keys(profileData).length === 0) {
+  //   return <Button onClick={handleButtonClick} text="Go to Form" />
+  // }
 
   return (
     <div>
-      {isEditMode ? (
-        <EditProfile data={profileData} onSubmit={submitEditProfile} />
-      ) : (
+    
+      {(!isEditMode && !isBlank) && (
         <ViewProfile data={profileData} />
       )}
-      {canEdit && (
+      {(canEdit && !isBlank) && (
         <button onClick={toggleEditMode}>
           {isEditMode ? "Cancel" : "Edit profile"}
         </button>
       )}
+      {(isBlank) && (
+        <Button onClick={handleButtonClick} text="Go to Form" />
+      )}
     </div>
   );
 }
+
+// {
+//   isEditMode ? (
+//     <EditProfile data={profileData} onSubmit={submitEditProfile} />
+//   )
+//     : (
+//       <ViewProfile data={profileData} />
+//     )
+// }
+
+
