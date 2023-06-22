@@ -27,6 +27,7 @@ export const ApplicationViews = () => {
 				<Route path="/Users" element={<UserList />}></Route>
 				<Route path="/Profile/:profileId" element={<Profile />}></Route>
 				<Route path="/CreateProfile" element={<ProfileForm />}></Route>
+
 			</Route>
 		</Routes>
 	)
