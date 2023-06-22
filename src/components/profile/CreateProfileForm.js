@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
+
 
 
 export const ProfileForm = () => {
@@ -22,12 +23,11 @@ export const ProfileForm = () => {
         the user to the profile
         
     */
+    const navigate = useNavigate()
 
     const localCelestialUser = localStorage.getItem("celestial_user")
     const celestialUserObject = JSON.parse(localCelestialUser)
     const currentUserId = celestialUserObject.id;
-
-    const navigate = useNavigate()
 
 
     const handleSaveButtonClick = (event) => {
@@ -53,7 +53,7 @@ export const ProfileForm = () => {
             })
                 .then(response => response.json())
                 .then(() => {
-                    navigate("/profile${celestialUserObject.id}")
+                    navigate(`/profile/${currentUserId}`)
 
                 })
         }
