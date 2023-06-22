@@ -7,7 +7,7 @@ export const UserList = () => {
 
     useEffect(
         () => {
-            fetch(`http://localhost:8088/users?_expand=sunSign&_expand=moonSign&_expand=risingSign`)
+            fetch(`http://localhost:8088/profiles/?_expand=sunSign&_expand=moonSign&_expand=risingSign&_expand=user`)
                 .then(response => response.json())
                 .then((userArray) => {
                     setUsers(userArray)
@@ -23,7 +23,7 @@ export const UserList = () => {
                 users.map(
                     (user) => {
                         return <section className="user" key={`${user.id}`}>
-                            <header><Link to={`/Profile/${user.id}`}>{user.firstName} {user.lastName}</Link></header>
+                            <header><Link to={`/Profile/${user.id}`}>{user?.user.firstName} {user?.user.lastName}</Link></header>
                             <div>Sun: {user?.sunSign?.name}</div>
                             <div>Moon: {user?.moonSign?.name}</div>
                             <div>Rising: {user?.risingSign?.name}</div>
