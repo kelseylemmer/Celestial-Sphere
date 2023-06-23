@@ -33,7 +33,6 @@ export const ProfileForm = () => {
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
 
-
         // TODO: Create the object to be saved to the API
         const profileToSendToAPI = {
             userId: currentUserId,

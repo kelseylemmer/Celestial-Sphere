@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 
 export const EditProfile = ({ onSave, onCancel }) => {
@@ -15,7 +17,9 @@ export const EditProfile = ({ onSave, onCancel }) => {
     const localCelestialUser = localStorage.getItem("celestial_user");
     const celestialUserObject = JSON.parse(localCelestialUser);
     const currentUserId = celestialUserObject.id;
-        
+
+
+
 
     useEffect(() => {
         fetch(`http://localhost:8088/profiles/${currentUserId}`)
@@ -63,93 +67,115 @@ export const EditProfile = ({ onSave, onCancel }) => {
                 setProfile(updatedProfile)
                 window.alert("Your Profile Has Been Successfully Updated");
             })
+    }
 
+
+    const DeleteButton = ({ currentUserId }) => {
+        const navigate = useNavigate();
+
+        const handleDelete = () => {
+            fetch(`http://localhost:8088/profiles/${currentUserId}`, {
+                method: "DELETE"
+            })
+                .then(() => {
+                    navigate("/Home");
+                })
+                .catch((error) => {
+                    console.error("Error deleting profile:", error);
+                });
+        };
+
+        return (
+            <button onClick={handleDelete} className="btn">
+                Delete Profile
+            </button>
+        );
     };
-    return (
-        <>
-            <form className="ProfileForm">
-                <h2 className="ProfileForm__title">Edit Profile</h2>
-                <fieldset>
-                    <div className="form-group">
-                        <label>My Sun Sign</label>
-                        <select
-                            required
-                            autoFocus
-                            className="form-control"
-                            placeholder="User Sun Sign"
-                            value={profile.sunSignId}
-                            onChange={(evt) =>
-                                setProfile({ ...profile, sunSignId: parseInt(evt.target.value) })
-                            }
-                        >
-                            <option value="0" defaultValue>
-                                Select Your Sun Sign
+
+
+return (
+    <>
+        <form className="ProfileForm">
+            <h2 className="ProfileForm__title">Edit Profile</h2>
+            <fieldset>
+                <div className="form-group">
+                    <label>My Sun Sign</label>
+                    <select
+                        required
+                        autoFocus
+                        className="form-control"
+                        placeholder="User Sun Sign"
+                        value={profile.sunSignId}
+                        onChange={(evt) =>
+                            setProfile({ ...profile, sunSignId: parseInt(evt.target.value) })
+                        }
+                    >
+                        <option value="0" defaultValue>
+                            Select Your Sun Sign
+                        </option>
+                        {sunSigns.map((sunObject) => (
+                            <option value={sunObject.id} key={sunObject.id}>
+                                {sunObject.name}
                             </option>
-                            {sunSigns.map((sunObject) => (
-                                <option value={sunObject.id} key={sunObject.id}>
-                                    {sunObject.name}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div className="form-group">
-                        <label>My Moon Sign</label>
-                        <select
-                            required
-                            autoFocus
-                            className="form-control"
-                            placeholder="User Moon Sign"
-                            value={profile.moonSignId}
-                            onChange={(evt) =>
-                                setProfile({ ...profile, moonSignId: parseInt(evt.target.value) })
-                            }
-                        >
-                            <option value="0" defaultValue>
-                                Select Your Moon Sign
+                        ))}
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div className="form-group">
+                    <label>My Moon Sign</label>
+                    <select
+                        required
+                        autoFocus
+                        className="form-control"
+                        placeholder="User Moon Sign"
+                        value={profile.moonSignId}
+                        onChange={(evt) =>
+                            setProfile({ ...profile, moonSignId: parseInt(evt.target.value) })
+                        }
+                    >
+                        <option value="0" defaultValue>
+                            Select Your Moon Sign
+                        </option>
+                        {moonSigns.map((moonObject) => (
+                            <option value={moonObject.id} key={moonObject.id}>
+                                {moonObject.name}
                             </option>
-                            {moonSigns.map((moonObject) => (
-                                <option value={moonObject.id} key={moonObject.id}>
-                                    {moonObject.name}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div className="form-group">
-                        <label>My Rising Sign</label>
-                        <select
-                            required
-                            autoFocus
-                            className="form-control"
-                            placeholder="User Rising Sign"
-                            value={profile.risingSignId}
-                            onChange={(evt) =>
-                                setProfile({ ...profile, risingSignId: parseInt(evt.target.value) })
-                            }
-                        >
-                            <option value="0" defaultValue>
-                                Select Your Rising Sign
+                        ))}
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div className="form-group">
+                    <label>My Rising Sign</label>
+                    <select
+                        required
+                        autoFocus
+                        className="form-control"
+                        placeholder="User Rising Sign"
+                        value={profile.risingSignId}
+                        onChange={(evt) =>
+                            setProfile({ ...profile, risingSignId: parseInt(evt.target.value) })
+                        }
+                    >
+                        <option value="0" defaultValue>
+                            Select Your Rising Sign
+                        </option>
+                        {risingSigns.map((risingObject) => (
+                            <option value={risingObject.id} key={risingObject.id}>
+                                {risingObject.name}
                             </option>
-                            {risingSigns.map((risingObject) => (
-                                <option value={risingObject.id} key={risingObject.id}>
-                                    {risingObject.name}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                </fieldset>
-                <button onClick={handleSaveButtonClick} className="btn btn-primary">
-                    Update Profile
-                </button>
-            </form>
-        </>
-    );
+                        ))}
+                    </select>
+                </div>
+            </fieldset>
+            <button onClick={handleSaveButtonClick} className="btn btn-primary">
+                Update Profile
+            </button>
+            <DeleteButton currentUserId={currentUserId} />
+            
+        </form>
+
+    </>
+);
 };
-
-
-
-
-
