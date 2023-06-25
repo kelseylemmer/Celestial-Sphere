@@ -2,7 +2,7 @@ import { Outlet, Route, Routes } from "react-router-dom"
 import { SunList } from "../suns/SunsList.js"
 import { MoonList } from "../moons/MoonsList.js"
 import { RisingList } from "../risings/RisingsList.js"
-import { UserList } from "../users/usersList.js"
+import { UserList } from "../users/UsersList.js"
 import { Profile } from "../profile/Profile.js"
 import { ProfileForm } from "../profile/CreateProfileForm.js"
 

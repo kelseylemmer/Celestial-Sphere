@@ -23,14 +23,14 @@ export const Profile = () => {
 
   useEffect(() => {
     ProfileInfo()
-    
+
   }, []);
 
   useEffect(() => {
     ProfileInfo()
-  },[isEditMode])
+  }, [isEditMode])
 
-  const ProfileInfo =() =>  {
+  const ProfileInfo = () => {
     fetch(
       `http://localhost:8088/profiles/${profileId}?_expand=sunSign&_expand=moonSign&_expand=risingSign&_expand=user`
     )
@@ -61,16 +61,16 @@ export const Profile = () => {
 
   return (
     <div>
-      {!isEditMode && !isBlank && 
-      <ViewProfile data={profileData} />
+      {!isEditMode && !isBlank &&
+        <ViewProfile data={profileData} />
       }
       {canEdit && !isBlank && (
         <button onClick={toggleEditMode}>
           {isEditMode ? "Back" : "Edit profile"}
         </button>
       )}
-      {isBlank && 
-      <Button onClick={handleButtonClick} text="Create Profile" />
+      {isBlank &&
+        <Button onClick={handleButtonClick} text="Create Profile" />
       }
       {isEditMode && (
         <EditProfile onSave={handleSaveButtonClick} />)
@@ -78,7 +78,6 @@ export const Profile = () => {
     </div>
   );
 };
-
 
 
 
