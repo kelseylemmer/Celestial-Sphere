@@ -12,11 +12,16 @@ export const NavBar = () => {
     const [isHousesOpen, setIsHousesOpen] = useState(false);
 
     const toggleDropdownSigns = () => {
-        setIsSignsOpen(!isSignsOpen);
+        setIsSignsOpen(true);
     };
 
     const toggleDropdownHouses = () => {
-        setIsHousesOpen(!isHousesOpen);
+        setIsHousesOpen(true);
+    };
+
+    const closeDropdowns = () => {
+        setIsSignsOpen(false);
+        setIsHousesOpen(false);
     };
 
     const handleSignsOptionClick = (option) => {
@@ -44,11 +49,11 @@ export const NavBar = () => {
             </li>
             <li className="navbar__item">
                 <li className="navbar__item">
-                    <button className="navbar__link" onMouseEnter={toggleDropdownSigns} onMouseLeave={toggleDropdownSigns}>
+                    <button className="navbar__link" onMouseEnter={toggleDropdownSigns} onMouseLeave={closeDropdowns}>
                         The Signs
                     </button>
                     {isSignsOpen && (
-                        <ul className="dropdown">
+                        <ul className="dropdown" onMouseEnter={toggleDropdownSigns} onMouseLeave={closeDropdowns}>
                             <li onClick={() => handleSignsOptionClick('Aries')}>Aries</li>
                             <li onClick={() => handleSignsOptionClick('Taurus')}>Taurus</li>
                             <li onClick={() => handleSignsOptionClick('Gemini')}>Gemini</li>
@@ -67,11 +72,11 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/Users">Users</Link>
             </li>
             <li className="navbar__item">
-                <button className="navbar__link" onMouseEnter={toggleDropdownHouses} onMouseLeave={toggleDropdownHouses}>
+                <button className="navbar__link" onMouseEnter={toggleDropdownHouses} onMouseLeave={closeDropdowns}>
                     Houses
                 </button>
                 {isHousesOpen && (
-                    <ul className="dropdown">
+                    <ul className="dropdown" onMouseEnter={toggleDropdownHouses} onMouseLeave={closeDropdowns}>
                         <li onClick={() => handleHousesOptionClick('First')}>First House</li>
                         <li onClick={() => handleHousesOptionClick('Second')}>Second House</li>
                         <li onClick={() => handleHousesOptionClick('Third')}>Third House</li>
