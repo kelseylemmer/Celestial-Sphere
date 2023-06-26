@@ -11,11 +11,12 @@ export const NavBar = () => {
     const [isSignsOpen, setIsSignsOpen] = useState(false);
     const [isHousesOpen, setIsHousesOpen] = useState(false);
 
-    const toggleDropdownHouses = () => {
-        setIsHousesOpen(!isHousesOpen);
-    };
     const toggleDropdownSigns = () => {
         setIsSignsOpen(!isSignsOpen);
+    };
+
+    const toggleDropdownHouses = () => {
+        setIsHousesOpen(!isHousesOpen);
     };
 
     const handleSignsOptionClick = (option) => {
@@ -43,7 +44,7 @@ export const NavBar = () => {
             </li>
             <li className="navbar__item">
                 <li className="navbar__item">
-                    <button className="navbar__link" onClick={toggleDropdownSigns}>
+                    <button className="navbar__link" onMouseEnter={toggleDropdownSigns} onMouseLeave={toggleDropdownSigns}>
                         The Signs
                     </button>
                     {isSignsOpen && (
@@ -66,7 +67,7 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/Users">Users</Link>
             </li>
             <li className="navbar__item">
-                <button className="navbar__link" onClick={toggleDropdownHouses}>
+                <button className="navbar__link" onMouseEnter={toggleDropdownHouses} onMouseLeave={toggleDropdownHouses}>
                     Houses
                 </button>
                 {isHousesOpen && (
