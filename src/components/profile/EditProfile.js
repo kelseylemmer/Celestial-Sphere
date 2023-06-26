@@ -86,14 +86,6 @@ export const EditProfile = ({ onSave, onCancel }) => {
                 });
         };
 
-        // const resetLocalUserProfile = ({ currentUserProfileId }) => {
-        //     const foundProfiles = fetch(`http://localhost:8088/profiles/${currentUserProfileId}`)
-        //         .then((response) => response.json())
-
-        //     if (Object.keys(foundProfiles).length === 0) {
-        //         celestialUserObject.profileId = null
-        //     }
-        // }
 
         return (
             <button onClick={handleDelete} className="btn">
