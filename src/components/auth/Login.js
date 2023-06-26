@@ -7,26 +7,35 @@ export const Login = () => {
     const [email, set] = useState("klemmer@gmail.com")
     const navigate = useNavigate()
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault()
 
-        return fetch(`http://localhost:8088/users?email=${email}`)
+        const foundUsers = await fetch(`http://localhost:8088/users?email=${email}`)
             .then(res => res.json())
-            .then(foundUsers => {
-                if (foundUsers.length === 1) {
-                    const user = foundUsers[0]
-                    localStorage.setItem("celestial_user", JSON.stringify({
-                        id: user.id,
-                        firstName: user.firstName,
-                        lastName: user.lastName
-                    }))
 
-                    navigate("/")
-                }
-                else {
-                    window.alert("Invalid login")
-                }
-            })
+        if (foundUsers.length === 1) {
+            const user = foundUsers[0]
+            const celestialUser = {
+                id: user.id,
+                firstName: user.firstName,
+                lastName: user.lastName,
+                profileId: null
+            }
+
+            const foundProfiles = await fetch(`http://localhost:8088/profiles?userId=${user.id}`)
+                .then(res => res.json())
+
+            if (foundProfiles.length === 1) {
+                celestialUser.profileId = foundProfiles[0].id
+            }
+
+            localStorage.setItem("celestial_user", JSON.stringify(celestialUser))
+
+            navigate("/")
+        }
+        else {
+            window.alert("Invalid login")
+        }
     }
 
     return (

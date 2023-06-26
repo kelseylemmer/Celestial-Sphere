@@ -25,8 +25,13 @@ export const NavBar = () => {
             <li className="navbar__item">
                 <Link className="navbar__link" to="/Users">Users</Link>
             </li>
-            {localCelestialUser && <li className="navbar__item">
-                <Link className="navbar__link" to={`/Profile/${celestialUserObject.id}`}>My Profile</Link>
+            {(localCelestialUser && celestialUserObject.profileId) && <li
+                className="navbar__item">
+                <Link className="navbar__link" to={`/Profile/${celestialUserObject.profileId}`}>My Profile</Link>
+            </li>}
+            {(localCelestialUser && !celestialUserObject.profileId) && <li
+                className="navbar__item">
+                <Link className="navbar__link" to="/CreateProfile">Create Profile</Link>
             </li>}
             {
                 localCelestialUser && <li className="navbar__item navbar__logout">

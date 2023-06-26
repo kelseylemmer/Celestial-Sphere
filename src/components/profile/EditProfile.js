@@ -1,28 +1,26 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, useParams } from "react-router-dom";
 
 
 export const EditProfile = ({ onSave, onCancel }) => {
-    const [sunSigns, setSunSigns] = useState([]);
-    const [moonSigns, setMoonSigns] = useState([]);
-    const [risingSigns, setRisingSigns] = useState([]);
+    const [suns, setSuns] = useState([]);
+    const [moons, setMoons] = useState([]);
+    const [risings, setRisings] = useState([]);
     const [profile, setProfile] = useState({
         userId: "",
-        sunSignId: "",
-        moonSignId: "",
-        risingSignId: "",
+        sunId: "",
+        moonId: "",
+        risingId: "",
     });
 
     const localCelestialUser = localStorage.getItem("celestial_user");
     const celestialUserObject = JSON.parse(localCelestialUser);
-    const currentUserId = celestialUserObject.id;
-
+    const currentUserProfileId = celestialUserObject.profileId
 
 
 
     useEffect(() => {
-        fetch(`http://localhost:8088/profiles/${currentUserId}`)
+        fetch(`http://localhost:8088/profiles/${currentUserProfileId}`)
             .then((response) => response.json())
             .then((data) => {
 
@@ -31,24 +29,24 @@ export const EditProfile = ({ onSave, onCancel }) => {
     }, []);
 
     useEffect(() => {
-        fetch(`http://localhost:8088/sunSigns`)
+        fetch(`http://localhost:8088/suns`)
             .then((response) => response.json())
             .then((sunsArray) => {
-                setSunSigns(sunsArray);
+                setSuns(sunsArray);
             });
     }, []);
     useEffect(() => {
-        fetch(`http://localhost:8088/moonSigns`)
+        fetch(`http://localhost:8088/moons`)
             .then((response) => response.json())
             .then((moonsArray) => {
-                setMoonSigns(moonsArray);
+                setMoons(moonsArray);
             });
     }, []);
     useEffect(() => {
-        fetch(`http://localhost:8088/risingSigns`)
+        fetch(`http://localhost:8088/risings`)
             .then((response) => response.json())
             .then((risingArray) => {
-                setRisingSigns(risingArray);
+                setRisings(risingArray);
             });
     }, []);
 
@@ -70,20 +68,32 @@ export const EditProfile = ({ onSave, onCancel }) => {
     }
 
 
-    const DeleteButton = ({ currentUserId }) => {
+    const DeleteButton = ({ currentUserProfileId }) => {
         const navigate = useNavigate();
 
         const handleDelete = () => {
-            fetch(`http://localhost:8088/profiles/${currentUserId}`, {
+            fetch(`http://localhost:8088/profiles/${currentUserProfileId}`, {
                 method: "DELETE"
             })
                 .then(() => {
                     navigate("/Home");
                 })
+                // .then(
+                //     resetLocalUserProfile()
+                // )
                 .catch((error) => {
                     console.error("Error deleting profile:", error);
                 });
         };
+
+        // const resetLocalUserProfile = ({ currentUserProfileId }) => {
+        //     const foundProfiles = fetch(`http://localhost:8088/profiles/${currentUserProfileId}`)
+        //         .then((response) => response.json())
+
+        //     if (Object.keys(foundProfiles).length === 0) {
+        //         celestialUserObject.profileId = null
+        //     }
+        // }
 
         return (
             <button onClick={handleDelete} className="btn">
@@ -105,15 +115,15 @@ export const EditProfile = ({ onSave, onCancel }) => {
                             autoFocus
                             className="form-control"
                             placeholder="User Sun Sign"
-                            value={profile.sunSignId}
+                            value={profile.sunId}
                             onChange={(evt) =>
-                                setProfile({ ...profile, sunSignId: parseInt(evt.target.value) })
+                                setProfile({ ...profile, sunId: parseInt(evt.target.value) })
                             }
                         >
                             <option value="0" defaultValue>
                                 Select Your Sun Sign
                             </option>
-                            {sunSigns.map((sunObject) => (
+                            {suns.map((sunObject) => (
                                 <option value={sunObject.id} key={sunObject.id}>
                                     {sunObject.name}
                                 </option>
@@ -129,15 +139,15 @@ export const EditProfile = ({ onSave, onCancel }) => {
                             autoFocus
                             className="form-control"
                             placeholder="User Moon Sign"
-                            value={profile.moonSignId}
+                            value={profile.moonId}
                             onChange={(evt) =>
-                                setProfile({ ...profile, moonSignId: parseInt(evt.target.value) })
+                                setProfile({ ...profile, moonId: parseInt(evt.target.value) })
                             }
                         >
                             <option value="0" defaultValue>
                                 Select Your Moon Sign
                             </option>
-                            {moonSigns.map((moonObject) => (
+                            {moons.map((moonObject) => (
                                 <option value={moonObject.id} key={moonObject.id}>
                                     {moonObject.name}
                                 </option>
@@ -153,15 +163,15 @@ export const EditProfile = ({ onSave, onCancel }) => {
                             autoFocus
                             className="form-control"
                             placeholder="User Rising Sign"
-                            value={profile.risingSignId}
+                            value={profile.risingId}
                             onChange={(evt) =>
-                                setProfile({ ...profile, risingSignId: parseInt(evt.target.value) })
+                                setProfile({ ...profile, risingId: parseInt(evt.target.value) })
                             }
                         >
                             <option value="0" defaultValue>
                                 Select Your Rising Sign
                             </option>
-                            {risingSigns.map((risingObject) => (
+                            {risings.map((risingObject) => (
                                 <option value={risingObject.id} key={risingObject.id}>
                                     {risingObject.name}
                                 </option>
@@ -172,7 +182,7 @@ export const EditProfile = ({ onSave, onCancel }) => {
                 <button onClick={handleSaveButtonClick} className="btn btn-primary">
                     Update Profile
                 </button>
-                <DeleteButton currentUserId={currentUserId} />
+                <DeleteButton currentUserProfileId={currentUserProfileId} />
 
             </form>
 

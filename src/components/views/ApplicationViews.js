@@ -4,7 +4,8 @@ import { MoonList } from "../moons/MoonsList.js"
 import { RisingList } from "../risings/RisingsList.js"
 import { UserList } from "../users/UsersList.js"
 import { Profile } from "../profile/Profile.js"
-import { ProfileForm } from "../profile/CreateProfileForm.js"
+import { ProfileForm } from "../createProfile/CreateProfileForm.js"
+
 
 
 

@@ -3,14 +3,14 @@ import "./User.css"
 import { Link } from "react-router-dom"
 
 export const UserList = () => {
-    const [users, setUsers] = useState([])
+    const [profiles, setProfiles] = useState([])
 
     useEffect(
         () => {
-            fetch(`http://localhost:8088/profiles/?_expand=sunSign&_expand=moonSign&_expand=risingSign&_expand=user`)
+            fetch(`http://localhost:8088/profiles/?_expand=sun&_expand=moon&_expand=rising&_expand=user`)
                 .then(response => response.json())
-                .then((userArray) => {
-                    setUsers(userArray)
+                .then((profileArray) => {
+                    setProfiles(profileArray)
                 })
         },
         []
@@ -20,13 +20,13 @@ export const UserList = () => {
 
         <article className="users">
             {
-                users.map(
-                    (user) => {
-                        return <section className="user" key={`${user.id}`}>
-                            <header><Link to={`/Profile/${user.id}`}>{user?.user.firstName} {user?.user.lastName}</Link></header>
-                            <div>Sun: {user?.sunSign?.name}</div>
-                            <div>Moon: {user?.moonSign?.name}</div>
-                            <div>Rising: {user?.risingSign?.name}</div>
+                profiles.map(
+                    (profile) => {
+                        return <section className="user" key={`${profile.id}`}>
+                            <header><Link to={`/Profile/${profile.id}`}>{profile?.user.firstName} {profile?.user.lastName}</Link></header>
+                            <div>Sun: {profile?.sun?.name}</div>
+                            <div>Moon: {profile?.moon?.name}</div>
+                            <div>Rising: {profile?.rising?.name}</div>
                         </section>
                     }
                 )
