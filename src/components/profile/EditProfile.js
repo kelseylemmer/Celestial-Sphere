@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
-export const EditProfile = ({ onSave, onCancel }) => {
+export const EditProfile = ({ onSave }) => {
     const [suns, setSuns] = useState([]);
     const [moons, setMoons] = useState([]);
     const [risings, setRisings] = useState([]);
@@ -76,11 +76,16 @@ export const EditProfile = ({ onSave, onCancel }) => {
                 method: "DELETE"
             })
                 .then(() => {
-                    navigate("/Home");
+                    // Update local storage
+                    const localCelestialUser = localStorage.getItem("celestial_user");
+                    const celestialUserObject = JSON.parse(localCelestialUser);
+                    celestialUserObject.profileId = null;
+                    localStorage.setItem("celestial_user", JSON.stringify(celestialUserObject));
                 })
-                // .then(
-                //     resetLocalUserProfile()
-                // )
+                .then (
+                    navigate("/")
+                )
+
                 .catch((error) => {
                     console.error("Error deleting profile:", error);
                 });
