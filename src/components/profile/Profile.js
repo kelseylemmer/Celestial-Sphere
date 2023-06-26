@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { EditProfile } from "./EditProfile.js";
 import { ViewProfile } from "./ViewProfile.js";
 
@@ -19,6 +19,7 @@ export const Profile = () => {
   const [isEditMode, setIsEditMode] = useState(false);
   const [profileData, setProfileData] = useState(null);
 
+  const navigate = useNavigate();
 
   useEffect(() => {
     ProfileInfo()
@@ -35,7 +36,7 @@ export const Profile = () => {
     )
       .then((response) => response.json())
       .then((data) => {
-        setProfileData(data) ;
+        setProfileData(data);
       })
   }
 
@@ -50,12 +51,17 @@ export const Profile = () => {
     setIsEditMode(false);
   };
 
+  useEffect(() => {
+    if (currentUserProfileId === null) {
+      navigate("/CreateProfile");
+    }
+  }, [currentUserProfileId]);
 
 
   return (
     <div>
-      {!isEditMode &&
-        <ViewProfile data={profileData} />
+      {!isEditMode && (
+        <ViewProfile data={profileData} />)
       }
       {canEdit && (
         <button onClick={toggleEditMode}>
@@ -68,11 +74,3 @@ export const Profile = () => {
     </div>
   );
 };
-
-
-
-
-//  const handleButtonClick = () => {
-// navigate("/CreateProfile");
-//   };
-//  <Button onClick={handleButtonClick} text="Create Profile" />

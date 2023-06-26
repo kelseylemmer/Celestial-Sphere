@@ -8,8 +8,6 @@ import { ProfileForm } from "../createProfile/CreateProfileForm.js"
 
 
 
-
-
 export const ApplicationViews = () => {
 	return (
 		<Routes>
