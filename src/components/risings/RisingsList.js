@@ -6,7 +6,7 @@ export const RisingList = () => {
 
     useEffect(
         () => {
-            fetch(`http://localhost:8088/risingSigns`)
+            fetch(`http://localhost:8088/risings`)
                 .then(response => response.json())
                 .then((risingArray) => {
                     setRisingSigns(risingArray)
@@ -23,7 +23,7 @@ export const RisingList = () => {
                     (risingSign) => {
                         return <section className="risingSign" key={`${risingSign.id}`}>
                             <header>{risingSign.name}</header>
-                            <div>Element: {risingSign.element}</div>
+                            <div>Element: {risingSign.element.name}</div>
                             <div>Trait: {risingSign.trait}</div>
                             <div>Symbol: {risingSign.symbol}</div>
                         </section>

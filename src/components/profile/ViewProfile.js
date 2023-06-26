@@ -15,7 +15,7 @@ export const ViewProfile = ({ data }) => {
 
       <article className="bigThreeDetails">
         <h1>The sun in {data?.sun?.name}... </h1>
-        <p>The Sun represents your core essence and identity, and its placement in a particular zodiac sign offers insights into your fundamental nature, motivations, and self-expression.</p>
+        <p>Your Sun sign is determined based on the position of the Sun on the day of your birth. The Sun represents your core essence and identity, and its placement in a particular zodiac sign offers insights into your fundamental nature, motivations, and self-expression.</p>
         <div>{data?.sun?.trait}</div>
         <br></br>
         <div> Born between {data?.sun?.dates}, {data?.sun?.name} is a {data?.sun?.mode?.name} {data?.sun?.element?.name} sign.</div>
@@ -27,7 +27,7 @@ export const ViewProfile = ({ data }) => {
         <div>The {data?.sun?.name} symbol is {data?.sun?.symbol}.</div>
 
         <h1>The moon in {data?.moon?.name}...</h1>
-        <p>The Moon represents your emotions, instincts, and inner needs. Its placement in a particular sign offers insights into your emotional style, desires, and how you seek emotional fulfillment.</p>
+        <p>Your Moon sign is determined based on the position of the Moon at the time of your birth. The Moon represents your emotions, instincts, and inner needs. Its placement in a particular sign offers insights into your emotional style, desires, and how you seek emotional fulfillment.</p>
         <div>{data?.moon?.trait}</div>
         <br></br>
         <div>{data?.moon?.name} is a {data?.moon?.mode?.name} {data?.moon?.element?.name} sign</div>
@@ -41,6 +41,8 @@ export const ViewProfile = ({ data }) => {
         <div>The {data?.moon?.name} symbol is {data?.moon?.symbol}.</div>
 
         <h1>The {data?.rising?.name} rising... </h1>
+        <p>Your rising sign, also known as the ascendant, is determined by the zodiac constellation that was on the eastern horizon at the moment of your birth. This influential energy establishes the initial atmosphere of your entry into the world and creates an energetic blueprint for your life's journey. It acts as a lens through which you express your sun sign, shaping the way your personality and individuality manifest outwardly to others. In essence, the rising sign adds its distinct flavor to the core essence of your sun sign, influencing your overall approach and first impressions in the world.</p>
+        <br></br>
         <div>{data?.rising?.trait}</div>
         <br></br>
         <div>{data?.rising?.name} is a {data?.rising?.mode?.name} {data?.rising?.element?.name} sign.</div>

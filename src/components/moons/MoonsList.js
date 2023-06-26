@@ -6,7 +6,7 @@ export const MoonList = () => {
 
     useEffect(
         () => {
-            fetch(`http://localhost:8088/moonSigns`)
+            fetch(`http://localhost:8088/moons?_expand=element`)
                 .then(response => response.json())
                 .then((moonArray) => {
                     setMoonSigns(moonArray)
@@ -23,9 +23,9 @@ export const MoonList = () => {
                     (moonSign) => {
                         return <section className="moonSign" key={`${moonSign.id}`}>
                             <header>{moonSign.name}</header>
-                            <div>Element: {moonSign.element}</div>
+                            <div>Element: {moonSign.element.name}</div>
                             <div>Trait: {moonSign.trait}</div>
-                            <div>Love Compatibility: {moonSign.loveCompatibility}</div>
+                            <div>Love Compatibility: {moonSign.compatibility}</div>
                             <div>Symbol: {moonSign.symbol}</div>
                         </section>
                     }
