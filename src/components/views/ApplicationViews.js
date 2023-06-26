@@ -13,7 +13,6 @@ export const ApplicationViews = () => {
 		<Routes>
 			<Route path="/" element={
 				<>
-					<h1>Celestial Sphere</h1>
 					<div></div>
 
 					<Outlet />

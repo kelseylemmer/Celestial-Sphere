@@ -82,8 +82,8 @@ export const EditProfile = ({ onSave }) => {
                     celestialUserObject.profileId = null;
                     localStorage.setItem("celestial_user", JSON.stringify(celestialUserObject));
                 })
-                .then (
-                    navigate("/")
+                .then(
+                    navigate("/Home")
                 )
 
                 .catch((error) => {
