@@ -25,7 +25,7 @@ export const Register = (props) => {
                         id: createdUser.id,
                     }))
 
-                    navigate("/")
+                    navigate("/Home")
                 }
             })
     }
@@ -47,7 +47,7 @@ export const Register = (props) => {
     }
 
     const updateUser = (evt) => {
-        const copy = {...user}
+        const copy = { ...user }
         copy[evt.target.id] = evt.target.value
         setUser(copy)
     }
@@ -59,8 +59,8 @@ export const Register = (props) => {
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
                     <input onChange={updateUser}
-                           type="text" id="firstName" className="form-control"
-                           placeholder="Enter your first name" required autoFocus />
+                        type="text" id="firstName" className="form-control"
+                        placeholder="Enter your first name" required autoFocus />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>

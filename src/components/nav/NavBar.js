@@ -72,14 +72,9 @@ export const NavBar = () => {
                                 <li onClick={() => handleSignsOptionClick("Leo")}>Leo</li>
                                 <li onClick={() => handleSignsOptionClick("Virgo")}>Virgo</li>
                                 <li onClick={() => handleSignsOptionClick("Libra")}>Libra</li>
-                                <li onClick={() => handleSignsOptionClick("Scorpio")}>
-                                    Scorpio
-                                </li>
-                                <li onClick={() => handleSignsOptionClick("Sagittarius")}>
-                                    Sagittarius
-                                </li>
-                                <li onClick={() => handleSignsOptionClick("Capricorn")}>
-                                    Capricorn
+                                <li onClick={() => handleSignsOptionClick("Scorpio")}>Scorpio</li>
+                                <li onClick={() => handleSignsOptionClick("Sagittarius")}>Sagittarius</li>
+                                <li onClick={() => handleSignsOptionClick("Capricorn")}>Capricorn
                                 </li>
                                 <li onClick={() => handleSignsOptionClick("Aquarius")}>
                                     Aquarius

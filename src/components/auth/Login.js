@@ -31,7 +31,7 @@ export const Login = () => {
 
             localStorage.setItem("celestial_user", JSON.stringify(celestialUser))
 
-            navigate("/")
+            navigate("/Home")
         }
         else {
             window.alert("Invalid login")
