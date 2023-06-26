@@ -6,7 +6,7 @@ export const ViewProfile = ({ data }) => {
       <img src={pinkProfile} alt="My Celestial Profile" />
 
       <article className="bigThree">
-        <div>{data?.user.firstName} {data?.user.lastName}</div>
+        <div>{data?.user?.firstName} {data?.user?.lastName}</div>
         <div>My Sun Sign: {data?.sun?.name}</div>
         <div>My Moon Sign: {data?.moon?.name}</div>
         <div>My Rising Sign: {data?.rising?.name}</div>
