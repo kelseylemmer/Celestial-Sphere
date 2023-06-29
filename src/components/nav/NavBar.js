@@ -49,6 +49,9 @@ export const NavBar = () => {
                     </Link>
                 </li>
                 <li className="navbar__item">
+                    ✿
+                </li>
+                <li className="navbar__item">
                     <Link className="navbar__link" to="/SunSigns">
                         Sun Signs
                     </Link>
@@ -65,7 +68,7 @@ export const NavBar = () => {
                 </li>
                 <li className="navbar__item" onMouseLeave={closeDropdowns}>
                     <ul
-                        className={`navbar__link ${isSignsOpen ? "active" : ""}`}
+                        className= {`navbar__link ${isSignsOpen ? "active" : ""}`}
                         onMouseEnter={toggleDropdownSigns}
                     >
                         <li>The Signs</li>
@@ -230,6 +233,9 @@ export const NavBar = () => {
                         </Link>
                     </li>
                 )}
+                <li className="navbar__item">
+                    ✿
+                </li>
                 {localCelestialUser && (
                     <li className="navbar__item navbar__logout">
                         <Link

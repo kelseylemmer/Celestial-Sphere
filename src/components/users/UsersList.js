@@ -50,7 +50,8 @@ export const UserList = () => {
 
 
     return <>
-        <h2>Celestial Users</h2>
+        <div className="page-container">
+            <h2 className="page-title">Celestial Users</h2>
         <section className="searchUsers">
             <input
                 type="text"
@@ -121,5 +122,6 @@ export const UserList = () => {
                 <p>No matching users found.</p>
             )}
         </article>
+        </div>
     </>
 }

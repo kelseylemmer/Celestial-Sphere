@@ -77,8 +77,8 @@ export const ProfileForm = () => {
     }, []);
 
     return (
-        <form className="ProfileForm">
-            <h2 className="ProfileForm__title">Create New Profile</h2>
+        <form className="ProfileForm page-container">
+            <h2 className="ProfileForm__title page-title">Create New Profile</h2>
             <fieldset>
                 <div className="form-group">
                     <label>My Sun Sign</label>

@@ -18,6 +18,8 @@
     text-decoration: none;
     color: #28544E;
     font-weight: bold;
+    list-style-type: none;
+
 }
 
 .dropdown {
@@ -25,13 +27,13 @@
     top: 100%;
     left: 0;
     background-color: #fff;
-    padding: 10px;
     list-style-type: none;
     display: none;
 }
 
 .dropdown li {
     margin-bottom: 5px;
+    list-style-type: none;
 }
 
 .dropdown li:hover {
