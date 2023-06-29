@@ -14,10 +14,10 @@ export const CelestialSphere = () => {
 
 		<Route path="*" element={
 			<Authorized>
-				<>
+				<div id="celestial-container">
 					<NavBar />
 					<ApplicationViews />
-				</>
+				</div>
 			</Authorized>
 
 		} />

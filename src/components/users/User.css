@@ -1,6 +1,26 @@
-.users {
+.searchUsers {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filter-container select {
+    margin-right: 10px;
+    /* Add some right margin between the selects */
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 
 .user {
@@ -8,4 +28,13 @@
     border: 2px dotted darkred;
     padding: 0.7rem;
     margin: 0.5rem 0;
+    border-radius: 8px;
+    width: 200px;
+    /* Adjust the width based on your needs */
+    height: 200px;
+    /* Adjust the height based on your needs */
+}
+
+.user header {
+    text-align: center;
 }

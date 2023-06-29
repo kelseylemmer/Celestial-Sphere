@@ -9,6 +9,7 @@ export const UserList = () => {
     const [selectedSunSign, setSelectedSunSign] = useState("")
     const [selectedMoonSign, setSelectedMoonSign] = useState("")
     const [selectedRisingSign, setSelectedRisingSign] = useState("")
+    
 
     useEffect(
         () => {
@@ -50,12 +51,13 @@ export const UserList = () => {
 
     return <>
         <h2>Celestial Users</h2>
-        <div>
+        <section className="searchUsers">
             <input
                 type="text"
                 placeholder="Search by name"
                 value={searchTerm}
                 onChange={handleSearch} />
+            <div className="filter-container">
             <select value={selectedSunSign} onChange={handleSunSignChange}>
                 <option value="">All Sun Signs</option>
                 <option value="Aries">Aries</option>
@@ -101,7 +103,8 @@ export const UserList = () => {
                 <option value="Aquarius">Aquarius</option>
                 <option value="Pisces">Pisces</option>
             </select>
-        </div>
+            </div>
+        </section>
         <article className="users">
             {filteredProfiles.length > 0 ? (
                 filteredProfiles.map((profile) => (

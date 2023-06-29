@@ -15,6 +15,7 @@ export const RisingList = () => {
         []
     )
     return <>
+        <div className="page-container">
         <h2>Rising Signs</h2>
 
         <article className="risingSigns">
@@ -31,5 +32,6 @@ export const RisingList = () => {
                 )
             }
         </article>
+            </div>
     </>
 }

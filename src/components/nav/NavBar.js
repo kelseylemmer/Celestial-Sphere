@@ -10,8 +10,14 @@ export const NavBar = () => {
 
     const [isSignsOpen, setIsSignsOpen] = useState(false);
     const [isHousesOpen, setIsHousesOpen] = useState(false);
+    const [hoveredSign, setHoveredSign] = useState("");
+    const [hoveredHouse, setHoveredHouse] = useState("");
+
+
+
 
     const toggleDropdownSigns = () => {
+  
         setIsSignsOpen(!isSignsOpen);
     };
 
@@ -65,21 +71,67 @@ export const NavBar = () => {
                         <li>The Signs</li>
                         {isSignsOpen && (
                             <ul className="dropdown">
-                                <li onClick={() => handleSignsOptionClick("Aries")}>Aries</li>
-                                <li onClick={() => handleSignsOptionClick("Taurus")}>Taurus</li>
-                                <li onClick={() => handleSignsOptionClick("Gemini")}>Gemini</li>
-                                <li onClick={() => handleSignsOptionClick("Cancer")}>Cancer</li>
-                                <li onClick={() => handleSignsOptionClick("Leo")}>Leo</li>
-                                <li onClick={() => handleSignsOptionClick("Virgo")}>Virgo</li>
-                                <li onClick={() => handleSignsOptionClick("Libra")}>Libra</li>
-                                <li onClick={() => handleSignsOptionClick("Scorpio")}>Scorpio</li>
-                                <li onClick={() => handleSignsOptionClick("Sagittarius")}>Sagittarius</li>
-                                <li onClick={() => handleSignsOptionClick("Capricorn")}>Capricorn
-                                </li>
-                                <li onClick={() => handleSignsOptionClick("Aquarius")}>
-                                    Aquarius
-                                </li>
-                                <li onClick={() => handleSignsOptionClick("Pisces")}>Pisces</li>
+                                <li className={hoveredSign === "Aries" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Aries")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Aries")}>
+                                    Aries </li>
+                                <li className={hoveredSign === "Taurus" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Taurus")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Taurus")}>
+                                    Taurus</li>
+                                <li className={hoveredSign === "Gemini" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Gemini")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Gemini")}>
+                                    Gemini</li>
+                                <li className={hoveredSign === "Cancer" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Cancer")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Cancer")}>
+                                    Cancer</li>
+                                <li className={hoveredSign === "Leo" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Leo")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Leo")}>
+                                    Leo</li>
+                                <li className={hoveredSign === "Virgo" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Virgo")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Virgo")}>
+                                    Virgo</li>
+                                <li className={hoveredSign === "Libra" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Libra")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Libra")}>
+                                    Libra</li>
+                                <li className={hoveredSign === "Scorpio" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Scorpio")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Scorpio")}>
+                                    Scorpio</li>
+                                <li className={hoveredSign === "Sagittarius" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Sagittarius")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Sagittarius")}>
+                                    Sagittarius</li>
+                                <li className={hoveredSign === "Capricorn" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Capricorn")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Capricorn")}>
+                                    Capricorn</li>
+                                <li className={hoveredSign === "Aquarius" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Aquarius")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Aquarius")}>
+                                    Aquarius    
+                                    </li>
+                                <li className={hoveredSign === "Pisces" ? "active" : "undefined"}
+                                    onMouseEnter={() => setHoveredSign("Pisces")}
+                                    onMouseLeave={() => setHoveredSign("")}
+                                    onClick={() => handleSignsOptionClick("Pisces")}>
+                                    Pisces</li>
                             </ul>
                         )}
                     </ul>
@@ -97,42 +149,66 @@ export const NavBar = () => {
                         <li>Houses</li>
                         {isHousesOpen && (
                             <ul className="dropdown">
-                                <li onClick={() => handleHousesOptionClick("First")}>
-                                    First House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Second")}>
-                                    Second House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Third")}>
-                                    Third House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Fourth")}>
-                                    Fourth House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Fifth")}>
-                                    Fifth House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Sixth")}>
-                                    Sixth House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Seventh")}>
-                                    Seventh House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Eighth")}>
-                                    Eighth House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Ninth")}>
-                                    Ninth House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Tenth")}>
-                                    Tenth House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Eleventh")}>
-                                    Eleventh House
-                                </li>
-                                <li onClick={() => handleHousesOptionClick("Twelfth")}>
-                                    Twelfth House
-                                </li>
+                                <li className={hoveredHouse === "First" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("First")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("First")}>
+                                    First House</li>
+                                <li className={hoveredHouse === "Second" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Second")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Second")}>
+                                    Second House</li>
+                                <li className={hoveredHouse === "Third" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Third")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Third")}>
+                                    Third House</li>
+                                <li className={hoveredHouse === "Fourth" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Fourth")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Fourth")}>
+                                    Fourth House</li>
+                                <li className={hoveredHouse === "Fifth" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Fifth")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Fifth")}>
+                                    Fifth House </li>
+                                <li className={hoveredHouse === "Sixth" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Sixth")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Sixth")}>
+                                    Sixth House </li>
+                                <li className={hoveredHouse === "Seventh" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Seventh")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Seventh")}>
+                                    Seventh House</li>
+                                <li className={hoveredHouse === "Eighth" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Eighth")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Eighth")}>
+                                    Eighth House</li>
+                                <li className={hoveredHouse === "Ninth" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Ninth")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Ninth")}>
+                                    Ninth House</li>
+                                <li className={hoveredHouse === "Tenth" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Tenth")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Tenth")}>
+                                    Tenth House</li>
+                                <li className={hoveredHouse === "Eleventh" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Eleventh")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Eleventh")}>
+                                    Eleventh House</li>
+                                <li className={hoveredHouse === "Twelfth" ? "active" : ""}
+                                    onMouseEnter={() => setHoveredHouse("Twelfth")}
+                                    onMouseLeave={() => setHoveredHouse("")}
+                                    onClick={() => handleHousesOptionClick("Twelfth")}>
+                                    Twelfth House</li>
                             </ul>
                         )}
                     </ul>
