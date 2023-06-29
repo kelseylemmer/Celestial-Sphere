@@ -105,12 +105,12 @@ export const EditProfile = ({ onSave }) => {
                 <form className="ProfileForm">
                     
                     <fieldset>
-                        <div className="form-group">
+                        <div className="form-group rounded">
                             <label>My Sun Sign</label>
                             <select
                                 required
                                 autoFocus
-                                className="form-control"
+                                className="form-control rounded"
                                 placeholder="User Sun Sign"
                                 value={profile.sunId}
                                 onChange={(evt) =>
@@ -176,10 +176,12 @@ export const EditProfile = ({ onSave }) => {
                             </select>
                         </div>
                     </fieldset>
-                    <button onClick={handleSaveButtonClick} className="btn btn-primary">
+                    <div className="btns-update-delete">
+                        <button onClick={handleSaveButtonClick} className="btn btn-primary">
                         Update Profile
                     </button>
                     <DeleteButton currentUserProfileId={currentUserProfileId} />
+                    </div>
 
                 </form>
     );

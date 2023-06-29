@@ -32,3 +32,18 @@
 .edit-profile-container {
     background-color: #FAF6EC;
 }
+
+.btns-update-delete {
+    display: flex;
+    justify-content: space-between
+}
+
+.form-group {
+    border-radius: 20px;
+    /* Adjust the value as per your preference */
+}
+
+.form-control {
+    border-radius: 20px;
+    /* Adjust the value as per your preference */
+}

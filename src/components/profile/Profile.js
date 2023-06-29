@@ -68,7 +68,7 @@ export const Profile = () => {
         <ViewProfile data={profileData} />
         {canEdit && (
           <button onClick={toggleEditMode} className="btn btn-primary">
-            Edit Profile
+            Edit Profile →
           </button>
         )}
       </div>
@@ -78,7 +78,7 @@ export const Profile = () => {
           <h2 className="ProfileForm__title page-title">Edit Profile</h2>
           {canEdit && (
             <button onClick={toggleEditMode} className="btn btn-primary">
-              Back
+              ← Back
             </button>
           )}
           <EditProfile onSave={handleSaveButtonClick} />

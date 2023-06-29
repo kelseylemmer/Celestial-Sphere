@@ -2,6 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import { useState } from "react";
 
+
+
 export const NavBar = () => {
     const navigate = useNavigate();
 
@@ -17,7 +19,7 @@ export const NavBar = () => {
 
 
     const toggleDropdownSigns = () => {
-  
+
         setIsSignsOpen(!isSignsOpen);
     };
 
@@ -49,7 +51,7 @@ export const NavBar = () => {
                     </Link>
                 </li>
                 <li className="navbar__item">
-                    ✿
+                    ✼
                 </li>
                 <li className="navbar__item">
                     <Link className="navbar__link" to="/SunSigns">
@@ -68,69 +70,69 @@ export const NavBar = () => {
                 </li>
                 <li className="navbar__item" onMouseLeave={closeDropdowns}>
                     <ul
-                        className= {`navbar__link ${isSignsOpen ? "active" : ""}`}
+                        className={`navbar__link ${isSignsOpen ? "active" : ""}`}
                         onMouseEnter={toggleDropdownSigns}
                     >
                         <li>The Signs</li>
                         {isSignsOpen && (
                             <ul className="dropdown">
-                                <li className={hoveredSign === "Aries" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Aries" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Aries")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Aries")}>
                                     Aries </li>
-                                <li className={hoveredSign === "Taurus" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Taurus" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Taurus")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Taurus")}>
                                     Taurus</li>
-                                <li className={hoveredSign === "Gemini" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Gemini" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Gemini")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Gemini")}>
                                     Gemini</li>
-                                <li className={hoveredSign === "Cancer" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Cancer" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Cancer")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Cancer")}>
                                     Cancer</li>
-                                <li className={hoveredSign === "Leo" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Leo" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Leo")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Leo")}>
                                     Leo</li>
-                                <li className={hoveredSign === "Virgo" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Virgo" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Virgo")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Virgo")}>
                                     Virgo</li>
-                                <li className={hoveredSign === "Libra" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Libra" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Libra")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Libra")}>
                                     Libra</li>
-                                <li className={hoveredSign === "Scorpio" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Scorpio" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Scorpio")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Scorpio")}>
                                     Scorpio</li>
-                                <li className={hoveredSign === "Sagittarius" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Sagittarius" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Sagittarius")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Sagittarius")}>
                                     Sagittarius</li>
-                                <li className={hoveredSign === "Capricorn" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Capricorn" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Capricorn")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Capricorn")}>
                                     Capricorn</li>
-                                <li className={hoveredSign === "Aquarius" ? "active" : "undefined"}
+                                <li className={hoveredSign === "Aquarius" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Aquarius")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Aquarius")}>
-                                    Aquarius    
-                                    </li>
-                                <li className={hoveredSign === "Pisces" ? "active" : "undefined"}
+                                    Aquarius
+                                </li>
+                                <li className={hoveredSign === "Pisces" ? "active" : ""}
                                     onMouseEnter={() => setHoveredSign("Pisces")}
                                     onMouseLeave={() => setHoveredSign("")}
                                     onClick={() => handleSignsOptionClick("Pisces")}>
@@ -234,7 +236,7 @@ export const NavBar = () => {
                     </li>
                 )}
                 <li className="navbar__item">
-                    ✿
+                    ✼
                 </li>
                 {localCelestialUser && (
                     <li className="navbar__item navbar__logout">
