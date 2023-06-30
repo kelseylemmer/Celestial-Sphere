@@ -1,3 +1,5 @@
+
+
 .profile-container {
     background: linear-gradient(96deg, rgba(193, 210, 246, 1) 0%, rgba(227, 194, 230, 1) 39%, rgba(236, 205, 181, 1) 100%);
 }
@@ -46,4 +48,41 @@
 .form-control {
     border-radius: 20px;
     /* Adjust the value as per your preference */
+}
+
+.details-header {
+    font-family: 'Unbounded';
+    color:#28544E;
+}
+
+.info {
+    color:#28544E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.big-three {
+    color: #28544E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid #28544E;
+    border-radius: 20px;
+    padding: 20px;
+    text: center;
+}
+
+.top {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+h2.name {
+    font-family: 'Unbounded';
+    margin: 0 0 1 0;
+    border-bottom: 1.5px;
+}
+
+.unbounded {
+    font-family: 'Unbounded';
 }
