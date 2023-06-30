@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./createProfile.css"
 
 export const ProfileForm = () => {
     const [profile, update] = useState({
@@ -77,8 +78,8 @@ export const ProfileForm = () => {
     }, []);
 
     return (
-        <form className="ProfileForm page-container">
-            <h2 className="ProfileForm__title page-title">Create New Profile</h2>
+        <form className="ProfileForm page-container create-container">
+            <h1 className="ProfileForm__title page-title create-title">Create New Profile</h1>
             <fieldset>
                 <div className="form-group">
                     <label>My Sun Sign</label>

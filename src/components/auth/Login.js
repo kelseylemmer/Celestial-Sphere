@@ -40,7 +40,7 @@ export const Login = () => {
 
     return (
         <main className="container--login">
-            <section>
+            <section className="the-stuff">
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>Celestial Sphere</h1>
                     <h2>Please sign in</h2>
@@ -54,15 +54,14 @@ export const Login = () => {
                             required autoFocus />
                     </fieldset>
                     <fieldset>
-                        <button type="submit">
-                            Sign in
+                        <button type="submit" className="btn btn-primary">
+                            Sign in →
                         </button>
+                        <div><Link to="/register" className="resister">Not a member yet?</Link></div>
                     </fieldset>
                 </form>
             </section>
-            <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
-            </section>
+            
         </main>
     )
 }
