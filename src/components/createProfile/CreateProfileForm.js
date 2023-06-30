@@ -7,7 +7,8 @@ export const ProfileForm = () => {
         userId: "",
         sunId: "",
         moonId: "",
-        risingId: ""
+        risingId: "",
+        picture: "https: //i.imgur.com/TgkqULs.png"
     });
 
     const [suns, setSuns] = useState([]);
@@ -27,7 +28,8 @@ export const ProfileForm = () => {
             userId: currentUserId,
             sunId: +profile.sunId,
             moonId: +profile.moonId,
-            risingId: +profile.risingId
+            risingId: +profile.risingId,
+            picture: profile.picture
         };
 
         if (profile.sunId > 0 && profile.moonId > 0 && profile.risingId > 0) {
@@ -146,7 +148,24 @@ export const ProfileForm = () => {
                     </select>
                 </div>
             </fieldset>
-
+            <fieldset>
+                <div className="form-group">
+                    <label>Profile Picture:</label>
+                    <input
+                        required autoFocus
+                        type="text"
+                        className="form-control"
+                        placeholder="https://i.imgur.com/TgkqULs.png"
+                        value={profile.picture}
+                        onChange={
+                            (evt) => {
+                                const copy = { ...profile }
+                                copy.picture = evt.target.value
+                                update(copy)
+                            }
+                        } />
+                </div>
+            </fieldset>
             <button
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
                 className="btn btn-primary"

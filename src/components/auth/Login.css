@@ -55,8 +55,8 @@ fieldset {
 .form--login {
     background-position-x: right;
     z-index: 1;
-    min-height: 100rem;
-    min-width: 100rem;
+    min-height: 48rem; 
+    /* min-width: 100rem;  */
     background-color: white;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
