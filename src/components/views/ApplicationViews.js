@@ -5,6 +5,9 @@ import { RisingList } from "../risings/RisingsList.js"
 import { UserList } from "../users/UsersList.js"
 import { Profile } from "../profile/Profile.js"
 import { ProfileForm } from "../createProfile/CreateProfileForm.js"
+import { Home } from "../home/home.js"
+
+
 
 
 
@@ -13,12 +16,12 @@ export const ApplicationViews = () => {
 		<Routes>
 			<Route path="/" element={
 				<>
-					
+
 
 					<Outlet />
 				</>
 			}>
-
+				<Route path="/Home" element={<Home />}></Route>
 				<Route path="/SunSigns" element={<SunList />}></Route>
 				<Route path="/MoonSigns" element={<MoonList />}></Route>
 				<Route path="/RisingSigns" element={<RisingList />}></Route>

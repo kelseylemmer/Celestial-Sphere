@@ -1,4 +1,26 @@
-body {
-    background: rgb(197, 211, 248);
-    background: radial-gradient(circle, rgba(197, 211, 248, 1) 0%, rgba(241, 205, 188, 1) 100%);
+.home-container {
+    background: radial-gradient(circle, rgba(207, 197, 237, 1) 20%, rgba(243, 204, 192, 1) 100%);
+
+}
+
+.home-title {
+    font-family: 'Unbounded';
+    color: #276451;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 75px;
+    height: 75vh;
+}
+
+.footer {
+
+    text-align: center;
+    
+}
+
+.link {
+text-decoration: none;
 }
