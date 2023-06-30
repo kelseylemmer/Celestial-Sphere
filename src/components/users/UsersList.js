@@ -50,7 +50,7 @@ export const UserList = () => {
 
 
     return <>
-        <div className="page-container">
+        <div className="page-container user-container">
             <h1 className="page-title user-title">Celestial Users</h1>
         <section className="searchUsers">
             <input
@@ -106,15 +106,15 @@ export const UserList = () => {
             </select>
             </div>
         </section>
-        <article className="users">
+        <article className="users ">
             {filteredProfiles.length > 0 ? (
                 filteredProfiles.map((profile) => (
                     <section className="user" key={`${profile.id}`}>
-                        <header><Link to={`/Profile/${profile.id}`}>{profile?.user.firstName} {profile?.user.lastName}</Link></header>
+                        <header><Link to={`/Profile/${profile.id}`}><span className="unbounded">{profile?.user.firstName} {profile?.user.lastName}</span></Link></header>
                         <p>
-                            <div>Sun: {profile?.sun?.name}</div>
-                            <div>Moon: {profile?.moon?.name}</div>
-                            <div>Rising: {profile?.rising?.name}</div>
+                            <div>✦ <span className="unbounded">Sun:</span> {profile?.sun?.name}</div>
+                            <div>✦ <span className="unbounded">Moon:</span> {profile?.moon?.name}</div>
+                            <div>✦ <span className="unbounded">Rising:</span> {profile?.rising?.name}</div>
                         </p>
                     </section>
                 ))
