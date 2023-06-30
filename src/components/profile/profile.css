@@ -9,19 +9,19 @@
     padding: 10px 20px;
     border-radius: 25px;
     background-color: transparent;
-    border: 2px solid #28544E;
+    border: 2px solid #276451;
     ;
     cursor: pointer;
     font-family: 'YourCuteFont', sans-serif;
     font-size: 16px;
-    color: #28544E;
+    color: #276451;
     text-align: center;
     text-decoration: none;
 }
 
 /* Hover effect */
 .btn:hover {
-    background-color: #28544E;
+    background-color: #276451;
     color: #d5fd56
 }
 
@@ -41,12 +41,12 @@
 
 .form-group {
     font-family: 'Unbounded';
-        color: #28544E;
+        color: #276451;
 }
 
 .edit-title {
     font-family: 'Unbounded';
-    color: #28544E;
+    color: #276451;
 }
 
 
@@ -54,18 +54,18 @@
 
 .details-header {
     font-family: 'Unbounded';
-    color:#28544E;
+    color:#276451;
 }
 
 .info {
-    color:#28544E;
+    color:#276451;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .big-three {
-    color: #28544E;
+    color: #276451;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 2px solid #28544E;
+    border: 2px solid #276451;
     border-radius: 20px;
     padding: 20px;
     text: center;
@@ -81,8 +81,8 @@
 
 h2.name {
     font-family: 'Unbounded';
-    margin: 0 0 1 0;
-    border-bottom: 1.5px;
+    margin: 0 0 0 0;
+
 }
 
 .unbounded {
