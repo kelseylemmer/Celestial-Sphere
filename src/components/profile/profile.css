@@ -9,9 +9,8 @@
     border-radius: 25px;
     background-color: transparent;
     border: 2px solid #276451;
-    ;
     cursor: pointer;
-    font-family: 'YourCuteFont', sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     color: #276451;
     text-align: center;
@@ -53,6 +52,7 @@
 
 .details-header {
     font-family: 'Unbounded';
+    font-weight: 600;
     color:#276451;
 }
 
@@ -67,14 +67,13 @@
     border: 2px solid #276451;
     border-radius: 20px;
     padding: 20px;
-    text: center;
 }
 
 .top {
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: space-between;
 }
 
@@ -86,4 +85,18 @@ h2.name {
 
 .unbounded {
     font-family: 'Unbounded';
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px;
+        height: 300px;
+        /* border:2px solid #276451 */
+    margin-top: 50px;
+    filter: grayscale(100%);
+}
+
+.intro {
+    font-family: 'Unbounded';
+    font-weight: 600;
 }

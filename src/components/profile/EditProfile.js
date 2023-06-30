@@ -176,6 +176,21 @@ export const EditProfile = ({ onSave }) => {
                             </select>
                         </div>
                     </fieldset>
+            <fieldset>
+                <div className="form-group">
+                    <label>Upload New Photo</label>
+                    <input
+                        required autoFocus
+                        type="text"
+                        className="form-control"
+                        placeholder="Profile Picture URL"
+                        value={profile.picture}
+                        onChange={(evt) => {
+                                setProfile({...profile, picture: (evt.target.value)}) }
+                        }   
+                        />
+                </div>
+            </fieldset>
                     <div className="btns-update-delete">
                         <button onClick={handleSaveButtonClick} className="btn btn-primary">
                         Update Profile

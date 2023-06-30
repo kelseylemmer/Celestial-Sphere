@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./createProfile.css"
 
 export const ProfileForm = () => {
     const [profile, update] = useState({
         userId: "",
         sunId: "",
         moonId: "",
-        risingId: ""
+        risingId: "",
+        picture: "https: //i.imgur.com/TgkqULs.png"
     });
 
     const [suns, setSuns] = useState([]);
@@ -26,7 +28,8 @@ export const ProfileForm = () => {
             userId: currentUserId,
             sunId: +profile.sunId,
             moonId: +profile.moonId,
-            risingId: +profile.risingId
+            risingId: +profile.risingId,
+            picture: profile.picture
         };
 
         if (profile.sunId > 0 && profile.moonId > 0 && profile.risingId > 0) {
@@ -77,8 +80,8 @@ export const ProfileForm = () => {
     }, []);
 
     return (
-        <form className="ProfileForm page-container">
-            <h2 className="ProfileForm__title page-title">Create New Profile</h2>
+        <form className="ProfileForm page-container create-container">
+            <h1 className="ProfileForm__title page-title create-title">Create New Profile</h1>
             <fieldset>
                 <div className="form-group">
                     <label>My Sun Sign</label>
@@ -145,7 +148,24 @@ export const ProfileForm = () => {
                     </select>
                 </div>
             </fieldset>
-
+            <fieldset>
+                <div className="form-group">
+                    <label>Profile Picture:</label>
+                    <input
+                        required autoFocus
+                        type="text"
+                        className="form-control"
+                        placeholder="https://i.imgur.com/TgkqULs.png"
+                        value={profile.picture}
+                        onChange={
+                            (evt) => {
+                                const copy = { ...profile }
+                                copy.picture = evt.target.value
+                                update(copy)
+                            }
+                        } />
+                </div>
+            </fieldset>
             <button
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
                 className="btn btn-primary"
