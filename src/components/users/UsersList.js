@@ -51,8 +51,8 @@ export const UserList = () => {
         const celestialUserObject = JSON.parse(localCelestialUser);
         const currentUserProfileId = celestialUserObject.profileId;
         const mySphereObject = {
-            profileId: profileId,
-            userId: currentUserProfileId,
+            addedProfileId: profileId,
+            userProfileId: currentUserProfileId,
             sphere: true
         };
 
@@ -129,12 +129,12 @@ export const UserList = () => {
                 {filteredProfiles.length > 0 ? (
                     filteredProfiles.map((profile) => (
                         <section className="user" key={`${profile.id}`}>
-                                <header><Link to={`/Profile/${profile.id}`}><span className="unbounded">{profile?.user.firstName} {profile?.user.lastName}</span></Link></header>
-                                <p>
-                                    <div>✦ <span className="unbounded">Sun:</span> {profile?.sun?.name}</div>
-                                    <div>✦ <span className="unbounded">Moon:</span> {profile?.moon?.name}</div>
-                                    <div>✦ <span className="unbounded">Rising:</span> {profile?.rising?.name}</div>
-                                </p>
+                            <header><Link to={`/Profile/${profile.id}`}><span className="unbounded">{profile?.user.firstName} {profile?.user.lastName}</span></Link></header>
+                            <section>
+                                <div>✦ <span className="unbounded">Sun:</span> {profile?.sun?.name}</div>
+                                <div>✦ <span className="unbounded">Moon:</span> {profile?.moon?.name}</div>
+                                <div>✦ <span className="unbounded">Rising:</span> {profile?.rising?.name}</div>
+                            </section>
                             <section className="bottom">
                                 <button
                                     onClick={(clickEvent) => addToMySphere(profile.id)}
