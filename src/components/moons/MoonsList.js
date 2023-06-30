@@ -15,22 +15,24 @@ export const MoonList = () => {
         []
     )
     return <>
-        <h2>Moon Signs</h2>
 
-        <article className="moonSigns">
-            {
-                moonSigns.map(
-                    (moonSign) => {
-                        return <section className="moonSign" key={`${moonSign.id}`}>
-                            <header>{moonSign.name}</header>
-                            <div>Element: {moonSign.element.name}</div>
-                            <div>Trait: {moonSign.trait}</div>
-                            <div>Love Compatibility: {moonSign.compatibility}</div>
-                            <div>Symbol: {moonSign.symbol}</div>
-                        </section>
-                    }
-                )
-            }
-        </article>
+        <div className="page-container">
+            <h1 className="page-title moon-title">Moon Signs</h1>
+            <article className="moonSigns">
+                {
+                    moonSigns.map(
+                        (moonSign) => {
+                            return <section className="moonSign" key={`${moonSign.id}`}>
+                                <header>{moonSign.name}</header>
+                                <div>Element: {moonSign.element.name}</div>
+                                <div>Trait: {moonSign.trait}</div>
+                                <div>Love Compatibility: {moonSign.compatibility}</div>
+                                <div>Symbol: {moonSign.symbol}</div>
+                            </section>
+                        }
+                    )
+                }
+            </article>
+        </div>
     </>
 }

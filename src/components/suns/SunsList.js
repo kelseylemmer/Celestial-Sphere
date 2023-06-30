@@ -18,23 +18,25 @@ export const SunList = () => {
         []
     )
     return <>
-        <h2>Sun Signs</h2>
+        <div className="page-container">
+            <h1 className="page-title sun-title">Sun Signs</h1>
 
-        <article className="sunSigns">
-            {
-                sunSigns.map(
-                    (sunSign) => {
-                        return <section className="sunSign" key={`${sunSign.id}`}>
-                            <header>{sunSign.name}</header>
-                            <div>Dates: {sunSign.dates}</div>
-                            <div>Element: {sunSign.element.name}</div>
-                            <div>Ruling Planet: {sunSign.planet.name}</div>
-                            <div>Traits: {sunSign.trait}</div>
-                            <div>Symbol: {sunSign.symbol}</div>
-                        </section>
-                    }
-                )
-            }
-        </article>
+            <article className="sunSigns">
+                {
+                    sunSigns.map(
+                        (sunSign) => {
+                            return <section className="sunSign" key={`${sunSign.id}`}>
+                                <header>{sunSign.name}</header>
+                                <div>Dates: {sunSign.dates}</div>
+                                <div>Element: {sunSign.element.name}</div>
+                                <div>Ruling Planet: {sunSign.planet.name}</div>
+                                <div>Traits: {sunSign.trait}</div>
+                                <div>Symbol: {sunSign.symbol}</div>
+                            </section>
+                        }
+                    )
+                }
+            </article>
+        </div>
     </>
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { EditProfile } from "./EditProfile.js";
 import { ViewProfile } from "./ViewProfile.js";
+import "./profile.css";
 
 
 
@@ -59,18 +60,32 @@ export const Profile = () => {
 
 
   return (
+
     <div>
-      {!isEditMode && (
-        <ViewProfile data={profileData} />)
+
+      {!isEditMode && <div className="profile-container page-container">
+
+        <ViewProfile data={profileData} />
+        {canEdit && (
+          <button onClick={toggleEditMode} className="btn btn-primary">
+            Edit Profile →
+          </button>
+        )}
+      </div>
       }
-      {canEdit && (
-        <button onClick={toggleEditMode}>
-          {isEditMode ? "Back" : "Edit profile"}
-        </button>
-      )}
       {isEditMode && (
-        <EditProfile onSave={handleSaveButtonClick} />)
+        <div className="edit-profile-container page-container">
+          <h1 className="ProfileForm__title page-title edit-title">Edit Profile</h1>
+          {canEdit && (
+            <button onClick={toggleEditMode} className="btn btn-primary">
+              ← Back
+            </button>
+          )}
+          <EditProfile onSave={handleSaveButtonClick} />
+
+        </div>)
       }
     </div>
+
   );
 };

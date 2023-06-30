@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./profile.css";
 
 
 export const EditProfile = ({ onSave }) => {
@@ -101,88 +102,87 @@ export const EditProfile = ({ onSave }) => {
 
 
     return (
-        <>
-            <form className="ProfileForm">
-                <h2 className="ProfileForm__title">Edit Profile</h2>
-                <fieldset>
-                    <div className="form-group">
-                        <label>My Sun Sign</label>
-                        <select
-                            required
-                            autoFocus
-                            className="form-control"
-                            placeholder="User Sun Sign"
-                            value={profile.sunId}
-                            onChange={(evt) =>
-                                setProfile({ ...profile, sunId: parseInt(evt.target.value) })
-                            }
-                        >
-                            <option value="0" defaultValue>
-                                Select Your Sun Sign
-                            </option>
-                            {suns.map((sunObject) => (
-                                <option value={sunObject.id} key={sunObject.id}>
-                                    {sunObject.name}
+                <form className="ProfileForm">
+                    
+                    <fieldset>
+                        <div className="form-group">
+                            <label>My Sun Sign</label>
+                            <select
+                                required
+                                autoFocus
+                        className="form-control "
+                                placeholder="User Sun Sign"
+                                value={profile.sunId}
+                                onChange={(evt) =>
+                                    setProfile({ ...profile, sunId: parseInt(evt.target.value) })
+                                }
+                            >
+                                <option className="form-select" value="0" defaultValue>
+                                    Select Your Sun Sign
                                 </option>
-                            ))}
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div className="form-group">
-                        <label>My Moon Sign</label>
-                        <select
-                            required
-                            autoFocus
-                            className="form-control"
-                            placeholder="User Moon Sign"
-                            value={profile.moonId}
-                            onChange={(evt) =>
-                                setProfile({ ...profile, moonId: parseInt(evt.target.value) })
-                            }
-                        >
-                            <option value="0" defaultValue>
-                                Select Your Moon Sign
-                            </option>
-                            {moons.map((moonObject) => (
-                                <option value={moonObject.id} key={moonObject.id}>
-                                    {moonObject.name}
+                                {suns.map((sunObject) => (
+                                    <option className="form-select" value={sunObject.id} key={sunObject.id}>
+                                        {sunObject.name}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div className="form-group">
+                            <label>My Moon Sign</label>
+                            <select
+                                required
+                                autoFocus
+                                className="form-control"
+                                placeholder="User Moon Sign"
+                                value={profile.moonId}
+                                onChange={(evt) =>
+                                    setProfile({ ...profile, moonId: parseInt(evt.target.value) })
+                                }
+                            >
+                                <option value="0" defaultValue>
+                                    Select Your Moon Sign
                                 </option>
-                            ))}
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div className="form-group">
-                        <label>My Rising Sign</label>
-                        <select
-                            required
-                            autoFocus
-                            className="form-control"
-                            placeholder="User Rising Sign"
-                            value={profile.risingId}
-                            onChange={(evt) =>
-                                setProfile({ ...profile, risingId: parseInt(evt.target.value) })
-                            }
-                        >
-                            <option value="0" defaultValue>
-                                Select Your Rising Sign
-                            </option>
-                            {risings.map((risingObject) => (
-                                <option value={risingObject.id} key={risingObject.id}>
-                                    {risingObject.name}
+                                {moons.map((moonObject) => (
+                                    <option value={moonObject.id} key={moonObject.id}>
+                                        {moonObject.name}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div className="form-group">
+                            <label>My Rising Sign</label>
+                            <select
+                                required
+                                autoFocus
+                                className="form-control"
+                                placeholder="User Rising Sign"
+                                value={profile.risingId}
+                                onChange={(evt) =>
+                                    setProfile({ ...profile, risingId: parseInt(evt.target.value) })
+                                }
+                            >
+                                <option value="0" defaultValue>
+                                    Select Your Rising Sign
                                 </option>
-                            ))}
-                        </select>
+                                {risings.map((risingObject) => (
+                                    <option value={risingObject.id} key={risingObject.id}>
+                                        {risingObject.name}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div className="btns-update-delete">
+                        <button onClick={handleSaveButtonClick} className="btn btn-primary">
+                        Update Profile
+                    </button>
+                    <DeleteButton currentUserProfileId={currentUserProfileId} />
                     </div>
-                </fieldset>
-                <button onClick={handleSaveButtonClick} className="btn btn-primary">
-                    Update Profile
-                </button>
-                <DeleteButton currentUserProfileId={currentUserProfileId} />
 
-            </form>
-
-        </>
+                </form>
     );
 };
