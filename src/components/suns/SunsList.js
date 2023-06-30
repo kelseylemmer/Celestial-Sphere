@@ -19,7 +19,7 @@ export const SunList = () => {
     )
     return <>
         <div className="page-container">
-            <h2 className="page-title">Sun Signs</h2>
+            <h1 className="page-title sun-title">Sun Signs</h1>
 
             <article className="sunSigns">
                 {

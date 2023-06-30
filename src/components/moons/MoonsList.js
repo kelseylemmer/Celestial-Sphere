@@ -17,7 +17,7 @@ export const MoonList = () => {
     return <>
 
         <div className="page-container">
-            <h2 className="page-title">Moon Signs</h2>
+            <h1 className="page-title moon-title">Moon Signs</h1>
             <article className="moonSigns">
                 {
                     moonSigns.map(

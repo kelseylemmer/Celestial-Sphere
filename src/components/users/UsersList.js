@@ -51,7 +51,7 @@ export const UserList = () => {
 
     return <>
         <div className="page-container">
-            <h2 className="page-title">Celestial Users</h2>
+            <h1 className="page-title user-title">Celestial Users</h1>
         <section className="searchUsers">
             <input
                 type="text"

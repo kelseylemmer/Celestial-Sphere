@@ -75,7 +75,7 @@ export const Profile = () => {
       }
       {isEditMode && (
         <div className="edit-profile-container page-container">
-          <h2 className="ProfileForm__title page-title">Edit Profile</h2>
+          <h1 className="ProfileForm__title page-title edit-title">Edit Profile</h1>
           {canEdit && (
             <button onClick={toggleEditMode} className="btn btn-primary">
               ← Back

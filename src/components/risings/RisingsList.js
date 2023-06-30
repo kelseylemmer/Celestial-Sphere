@@ -16,7 +16,7 @@ export const RisingList = () => {
     )
     return <>
         <div className="page-container">
-            <h2 className="page-title">className="page-title"Rising Signs</h2>
+            <h1 className="page-title page-title rising-title">Rising Signs</h1>
 
         <article className="risingSigns">
             {

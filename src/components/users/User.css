@@ -38,3 +38,8 @@
 .user header {
     text-align: center;
 }
+
+.user-title {
+    font-family: 'Unbounded';
+        color: #28544E;
+}

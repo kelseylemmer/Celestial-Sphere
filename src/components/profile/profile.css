@@ -4,7 +4,6 @@
     background: linear-gradient(96deg, rgba(193, 210, 246, 1) 0%, rgba(227, 194, 230, 1) 39%, rgba(236, 205, 181, 1) 100%);
 }
 
-
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -41,14 +40,17 @@
 }
 
 .form-group {
-    border-radius: 20px;
-    /* Adjust the value as per your preference */
+    font-family: 'Unbounded';
+        color: #28544E;
 }
 
-.form-control {
-    border-radius: 20px;
-    /* Adjust the value as per your preference */
+.edit-title {
+    font-family: 'Unbounded';
+    color: #28544E;
 }
+
+
+/* ViewProfile */
 
 .details-header {
     font-family: 'Unbounded';

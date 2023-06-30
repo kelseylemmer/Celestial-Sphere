@@ -105,23 +105,23 @@ export const EditProfile = ({ onSave }) => {
                 <form className="ProfileForm">
                     
                     <fieldset>
-                        <div className="form-group rounded">
+                        <div className="form-group">
                             <label>My Sun Sign</label>
                             <select
                                 required
                                 autoFocus
-                                className="form-control rounded"
+                        className="form-control "
                                 placeholder="User Sun Sign"
                                 value={profile.sunId}
                                 onChange={(evt) =>
                                     setProfile({ ...profile, sunId: parseInt(evt.target.value) })
                                 }
                             >
-                                <option value="0" defaultValue>
+                                <option className="form-select" value="0" defaultValue>
                                     Select Your Sun Sign
                                 </option>
                                 {suns.map((sunObject) => (
-                                    <option value={sunObject.id} key={sunObject.id}>
+                                    <option className="form-select" value={sunObject.id} key={sunObject.id}>
                                         {sunObject.name}
                                     </option>
                                 ))}
