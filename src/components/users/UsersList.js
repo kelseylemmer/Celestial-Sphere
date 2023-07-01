@@ -50,20 +50,39 @@ export const UserList = () => {
     const localCelestialUser = localStorage.getItem("celestial_user");
     const celestialUserObject = JSON.parse(localCelestialUser);
     const currentUserId = celestialUserObject.userId;
-    const mySphereObject = {
-      profileId: profileId,
-      userId: currentUserId,
-    };
 
-    fetch(`http://localhost:8088/userSpheres`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(mySphereObject)
-    })
+    // Check if the userSphere already exists for the current user and profile
+    fetch(`http://localhost:8088/userSpheres?profileId=${profileId}&userId=${currentUserId}`)
       .then(response => response.json())
+      .then((userSpheres) => {
+        if (userSpheres.length === 0) {
+          // If the userSphere doesn't exist, create it
+          const mySphereObject = {
+            profileId: profileId,
+            userId: currentUserId,
+          };
+          fetch(`http://localhost:8088/userSpheres`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(mySphereObject)
+          })
+            .then(response => response.json())
+          } else {
+          // Handle the case when the userSphere already exists
+          const userSphereId = userSpheres[0].id;
+
+          fetch(`http://localhost:8088/userSpheres/${userSphereId}`, {
+            method: "DELETE"
+          })
+        }
+      })
+      .catch(error => {
+        // Handle the error
+      });
   }
+
 
 
 
