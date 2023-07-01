@@ -104,6 +104,21 @@ export const EditProfile = ({ onSave }) => {
     return (
                 <form className="ProfileForm">
                     
+            <fieldset>
+                <div className="form-group">
+                    <label>Display Name</label>
+                    <input
+                        required autoFocus
+                        type="text"
+                        className="form-control"
+                        value={profile.displayName}
+                        onChange={(evt) => {
+                            setProfile({ ...profile, displayName: (evt.target.value) })
+                        }
+                        }
+                    />
+                </div>
+            </fieldset>
                     <fieldset>
                         <div className="form-group">
                             <label>My Sun Sign</label>

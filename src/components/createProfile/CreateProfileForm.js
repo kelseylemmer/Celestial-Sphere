@@ -8,8 +8,12 @@ export const ProfileForm = () => {
         sunId: "",
         moonId: "",
         risingId: "",
-        picture: "https: //i.imgur.com/TgkqULs.png"
+        picture: "https: //i.imgur.com/TgkqULs.png",
+        displayName: ""
     });
+
+    const localCelestialUser = JSON.parse(localStorage.getItem("celestial_user"));
+    const currentUserId = localCelestialUser.id;
 
     const [suns, setSuns] = useState([]);
     const [moons, setMoons] = useState([]);
@@ -17,10 +21,6 @@ export const ProfileForm = () => {
     const [updatedLocalCelestialUser, setUpdatedLocalCelestialUser] = useState(localCelestialUser);
 
     const navigate = useNavigate();
-
-    const localCelestialUser = JSON.parse(localStorage.getItem("celestial_user"));
-    const currentUserId = localCelestialUser.id;
-
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault();
@@ -30,10 +30,11 @@ export const ProfileForm = () => {
             sunId: +profile.sunId,
             moonId: +profile.moonId,
             risingId: +profile.risingId,
-            picture: profile.picture
+            picture: profile.picture,
+            displayName: profile.displayName
         };
 
-        if (profile.sunId > 0 && profile.moonId > 0 && profile.risingId > 0) {
+        if (profile.sunId > 0 && profile.moonId > 0 && profile.risingId > 0 && profile.displayName !== "") {
             return fetch(`http://localhost:8088/profiles`, {
                 method: "POST",
                 headers: {
@@ -83,6 +84,24 @@ export const ProfileForm = () => {
     return (
         <form className="ProfileForm page-container create-container">
             <h1 className="ProfileForm__title page-title create-title">Create New Profile</h1>
+            <fieldset>
+                <div className="form-group">
+                    <label>Display Name</label>
+                    <input
+                        required autoFocus
+                        type="text"
+                        className="form-control"
+                        placeholder="Display name"
+                        value={profile.displayName}
+                        onChange={
+                            (evt) => {
+                                const copy = { ...profile }
+                                copy.displayName = evt.target.value
+                                update(copy)
+                            }
+                        } />
+                </div>
+            </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label>My Sun Sign</label>

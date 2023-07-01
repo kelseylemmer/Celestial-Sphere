@@ -9,7 +9,7 @@ export const ViewProfile = ({ data }) => {
         <img src={data?.picture} alt="profile picture" className="profile-pic"/>
 
         <section className="big-three">
-          <h2 className="name">{data?.user?.firstName} {data?.user?.lastName}</h2>
+          <h2 className="name">{data?.displayName}</h2>
           <div>✦ <span className="unbounded">My Sun Sign:</span> {data?.sun?.name}</div>
           <div>✦ <span className="unbounded">My Moon Sign:</span> {data?.moon?.name}</div>
           <div>✦ <span className="unbounded">My Rising Sign:</span> {data?.rising?.name}</div>
