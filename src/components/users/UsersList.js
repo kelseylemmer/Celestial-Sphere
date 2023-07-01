@@ -173,7 +173,7 @@ return <>
       {filteredProfiles.length > 0 ? (
         filteredProfiles.map((profile) => (
           <section className="user" key={`${profile.id}`}>
-            <header><Link to={`/Profile/${profile.id}`}><span className="unbounded">{profile?.user.firstName} {profile?.user.lastName}</span></Link></header>
+            <header><Link to={`/Profile/${profile.id}`}><span className="unbounded">{profile?.displayName}</span></Link></header>
             <section>
               <div>✦ <span className="unbounded">Sun:</span> {profile?.sun?.name}</div>
               <div>✦ <span className="unbounded">Moon:</span> {profile?.moon?.name}</div>
