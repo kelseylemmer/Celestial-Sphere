@@ -2,6 +2,7 @@
     background: #dfb0f6;
     color: #276451;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .searchUsers {
@@ -52,35 +53,39 @@
 .top {
     display: flex;
     flex-direction: row;
+    padding-bottom: 10px;
 }
 
 .bottom {
     display: flex;
-    flex-direction: row-reverse;
+}
+
+section.bottom{
+   margin-top: 20px;
+   padding: 0 0 0 
 }
 
 .user-hover {
     background-color: #f5f5f5;
     /* Background color on hover */
 }
-.add-button {
+.add-delete-button {
     display: inline-block;
-    padding: 5px 10px;
     border-radius: 25px;
     background-color: transparent;
     border: 2px solid #276451;
-    cursor: pointer;
+    align-self: flex-end;
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     color: #276451;
     text-align: center;
     text-decoration: none;
 }
 
 /* Hover effect */
-.add-button:hover {
+.add-delete-button:hover {
     background-color: #276451;
-    color: #d5fd56
+    color: #d5fd56;
 }
 
 a:visited{
