@@ -19,7 +19,8 @@ export const Login = () => {
                 id: user.id,
                 firstName: user.firstName,
                 lastName: user.lastName,
-                profileId: null
+                profileId: null,
+                userId: null
             }
 
             const foundProfiles = await fetch(`http://localhost:8088/profiles?userId=${user.id}`)
@@ -27,6 +28,9 @@ export const Login = () => {
 
             if (foundProfiles.length === 1) {
                 celestialUser.profileId = foundProfiles[0].id
+            }
+            if (foundProfiles.length === 1) {
+                celestialUser.userId = foundProfiles[0].userId
             }
 
             localStorage.setItem("celestial_user", JSON.stringify(celestialUser))
