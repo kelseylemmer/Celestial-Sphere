@@ -53,7 +53,7 @@ export const NavBar = () => {
                 <li className="navbar__item">
                     ✼
                 </li>
-                <li className="navbar__item">
+                {/* <li className="navbar__item">
                     <Link className="navbar__link" to="/SunSigns">
                         Sun Signs
                     </Link>
@@ -67,7 +67,7 @@ export const NavBar = () => {
                     <Link className="navbar__link" to="/RisingSigns">
                         Rising Signs
                     </Link>
-                </li>
+                </li> */}
                 <li className="navbar__item" onMouseLeave={closeDropdowns}>
                     <ul
                         className={`navbar__link ${isSignsOpen ? "active" : ""}`}
@@ -145,78 +145,6 @@ export const NavBar = () => {
                     <Link className="navbar__link" to="/Users">
                         Users
                     </Link>
-                </li>
-                <li className="navbar__item" onMouseLeave={closeDropdowns}>
-                    <ul
-                        className={`navbar__link ${isHousesOpen ? "active" : ""}`}
-                        onMouseEnter={toggleDropdownHouses}
-                    >
-                        <li>Houses</li>
-                        {isHousesOpen && (
-                            <ul className="dropdown">
-                                <li className={hoveredHouse === "First" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("First")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("First")}>
-                                    First House</li>
-                                <li className={hoveredHouse === "Second" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Second")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Second")}>
-                                    Second House</li>
-                                <li className={hoveredHouse === "Third" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Third")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Third")}>
-                                    Third House</li>
-                                <li className={hoveredHouse === "Fourth" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Fourth")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Fourth")}>
-                                    Fourth House</li>
-                                <li className={hoveredHouse === "Fifth" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Fifth")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Fifth")}>
-                                    Fifth House </li>
-                                <li className={hoveredHouse === "Sixth" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Sixth")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Sixth")}>
-                                    Sixth House </li>
-                                <li className={hoveredHouse === "Seventh" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Seventh")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Seventh")}>
-                                    Seventh House</li>
-                                <li className={hoveredHouse === "Eighth" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Eighth")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Eighth")}>
-                                    Eighth House</li>
-                                <li className={hoveredHouse === "Ninth" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Ninth")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Ninth")}>
-                                    Ninth House</li>
-                                <li className={hoveredHouse === "Tenth" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Tenth")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Tenth")}>
-                                    Tenth House</li>
-                                <li className={hoveredHouse === "Eleventh" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Eleventh")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Eleventh")}>
-                                    Eleventh House</li>
-                                <li className={hoveredHouse === "Twelfth" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredHouse("Twelfth")}
-                                    onMouseLeave={() => setHoveredHouse("")}
-                                    onClick={() => handleHousesOptionClick("Twelfth")}>
-                                    Twelfth House</li>
-                            </ul>
-                        )}
-                    </ul>
                 </li>
                 {localCelestialUser && celestialUserObject.profileId && (
                     <li className="navbar__item">

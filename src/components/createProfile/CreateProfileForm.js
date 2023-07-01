@@ -14,12 +14,13 @@ export const ProfileForm = () => {
     const [suns, setSuns] = useState([]);
     const [moons, setMoons] = useState([]);
     const [risings, setRisings] = useState([]);
+    const [updatedLocalCelestialUser, setUpdatedLocalCelestialUser] = useState(localCelestialUser);
 
     const navigate = useNavigate();
 
     const localCelestialUser = JSON.parse(localStorage.getItem("celestial_user"));
     const currentUserId = localCelestialUser.id;
-    const [updatedLocalCelestialUser, setUpdatedLocalCelestialUser] = useState(localCelestialUser);
+
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault();

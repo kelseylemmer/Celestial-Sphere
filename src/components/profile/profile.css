@@ -1,4 +1,3 @@
-
 .profile-container {
     background: linear-gradient(96deg, rgba(193, 210, 246, 1) 0%, rgba(227, 194, 230, 1) 39%, rgba(236, 205, 181, 1) 100%);
 }
@@ -15,6 +14,7 @@
     color: #276451;
     text-align: center;
     text-decoration: none;
+    margin-bottom: 50px;
 }
 
 /* Hover effect */
@@ -39,7 +39,7 @@
 
 .form-group {
     font-family: 'Unbounded';
-        color: #276451;
+    color: #276451;
 }
 
 .edit-title {
@@ -53,11 +53,11 @@
 .details-header {
     font-family: 'Unbounded';
     font-weight: 600;
-    color:#276451;
+    color: #276451;
 }
 
 .info {
-    color:#276451;
+    color: #276451;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .top {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -90,8 +90,8 @@ h2.name {
 .profile-pic {
     border-radius: 50%;
     width: 300px;
-        height: 300px;
-        /* border:2px solid #276451 */
+    height: 300px;
+    /* border:2px solid #276451 */
     margin-top: 50px;
     filter: grayscale(100%);
 }
@@ -99,4 +99,10 @@ h2.name {
 .intro {
     font-family: 'Unbounded';
     font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
 }
