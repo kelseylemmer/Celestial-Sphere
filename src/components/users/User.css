@@ -2,7 +2,6 @@
     background: #dfb0f6;
     color: #276451;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .searchUsers {
@@ -28,6 +27,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    padding-bottom: 100px;
 }
 
 .user {
