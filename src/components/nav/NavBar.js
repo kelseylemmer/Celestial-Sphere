@@ -16,8 +16,6 @@ export const NavBar = () => {
     const [hoveredHouse, setHoveredHouse] = useState("");
 
 
-
-
     const toggleDropdownSigns = () => {
 
         setIsSignsOpen(!isSignsOpen);
@@ -68,12 +66,22 @@ export const NavBar = () => {
                         Rising Signs
                     </Link>
                 </li> */}
+                <li className="navbar__item">
+                    <Link className="navbar__link" to="/Houses">
+                        Houses
+                    </Link>
+                </li>
+                <li className="navbar__item">
+                    <Link className="navbar__link" to="/Planets">
+                        Planets
+                    </Link>
+                </li>
                 <li className="navbar__item" onMouseLeave={closeDropdowns}>
                     <ul
                         className={`navbar__link ${isSignsOpen ? "active" : ""}`}
                         onMouseEnter={toggleDropdownSigns}
                     >
-                        <li>The Signs</li>
+                        <li>Signs</li>
                         {isSignsOpen && (
                             <ul className="dropdown">
                                 <li className={hoveredSign === "Aries" ? "active" : ""}
@@ -142,10 +150,11 @@ export const NavBar = () => {
                     </ul>
                 </li>
                 <li className="navbar__item">
-                    <Link className="navbar__link" to="/Houses">
-                        The Houses
+                    <Link className="navbar__link" to="/Elements">
+                        Elements
                     </Link>
                 </li>
+                    
                 <li className="navbar__item">
                     <Link className="navbar__link" to="/Users">
                         Users

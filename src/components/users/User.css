@@ -1,5 +1,7 @@
 .user-container {
     background: #dfb0f6;
+        max-width: 100%;
+            overflow-x: hidden;
     color: #276451;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
