@@ -6,6 +6,8 @@ import { UserList } from "../users/UsersList.js"
 import { Profile } from "../profile/Profile.js"
 import { ProfileForm } from "../createProfile/CreateProfileForm.js"
 import { Home } from "../home/home.js"
+import { MySphere } from "../mySphere/MySphere.js"
+import { Houses } from "../staticPages/houses/Houses.js"
 
 
 
@@ -25,9 +27,11 @@ export const ApplicationViews = () => {
 				<Route path="/SunSigns" element={<SunList />}></Route>
 				<Route path="/MoonSigns" element={<MoonList />}></Route>
 				<Route path="/RisingSigns" element={<RisingList />}></Route>
+				<Route path="/Houses" element={<Houses />}></Route>
 				<Route path="/Users" element={<UserList />}></Route>
 				<Route path="/Profile/:profileId" element={<Profile />}></Route>
 				<Route path="/CreateProfile" element={<ProfileForm />}></Route>
+				<Route path="/MySphere" element={<MySphere />}></Route>
 
 			</Route>
 		</Routes>

@@ -31,7 +31,7 @@ export const ViewProfile = ({ data }) => {
             <div className="intro">{data?.sun?.name} is ruled by {data?.sun?.planet?.name}.</div> 
             <div>{data?.sun?.planet?.name} is {data?.sun?.planet?.description}</div>
             <br></br>
-            <div>The {data?.sun?.name} symbol is {data?.sun?.symbol}.</div>
+            <div><span className="intro">Symbol:</span> {data?.sun?.symbol}</div>
           </div>
 
           <h1 className="details-header">The moon in {data?.moon?.name}...</h1>
@@ -46,8 +46,8 @@ export const ViewProfile = ({ data }) => {
             <div className="intro">{data?.moon?.name} is ruled by {data?.moon?.planet?.name}.</div>
             <div>{data?.moon?.planet?.name} is {data?.moon?.planet?.description}</div>
             <br></br>
-            <div>{data?.moon?.name} has a love compatibility with {data?.moon?.compatibility} moons.</div>
-            <div>The {data?.moon?.name} symbol is {data?.moon?.symbol}.</div>
+            <div><span className="intro">Compatibility:</span>  {data?.moon?.compatibility} moons</div>
+            <div><span className="intro">Symbol:</span> {data?.moon?.symbol}</div>
           </div>
 
           <h1 className="details-header">The {data?.rising?.name} rising... </h1>
@@ -64,7 +64,7 @@ export const ViewProfile = ({ data }) => {
             <div>{data?.rising?.planet?.name} is {data?.rising?.planet?.description}</div>
             <div></div>
             <br></br>
-            <div>The {data?.rising?.name} symbol is {data?.rising?.symbol}.</div>
+            <div><span className="intro">Symbol:</span> {data?.rising?.symbol}</div>
           </div>
         </div>
         </article>

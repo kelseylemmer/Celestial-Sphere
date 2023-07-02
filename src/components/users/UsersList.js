@@ -2,13 +2,18 @@ import { useEffect, useState } from "react"
 import "./User.css"
 import { Link } from "react-router-dom"
 
-export const UserList = () => {
+export const UserList = (profileId) => {
   const [profiles, setProfiles] = useState([])
 
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSunSign, setSelectedSunSign] = useState("")
   const [selectedMoonSign, setSelectedMoonSign] = useState("")
   const [selectedRisingSign, setSelectedRisingSign] = useState("")
+  
+  const [isAddMode, SetisAddMode] = useState(false);
+  const [userSphereExists, setUserSphereExists] = useState(false);
+
+
 
 
   useEffect(
@@ -83,7 +88,31 @@ export const UserList = () => {
       });
   }
 
+useEffect(() => {
+  ObjectExists()
+}, []);
 
+useEffect(() => {
+  ObjectExists()
+}, [userSphereExists])
+
+  const localCelestialUser = localStorage.getItem("celestial_user");
+  const celestialUserObject = JSON.parse(localCelestialUser);
+  const currentUserId = celestialUserObject.userId;
+
+const ObjectExists = () => {
+    // Fetch userSpheres for the current user and profile
+    fetch(`http://localhost:8088/userSpheres?profileId=${profileId}&userId=${currentUserId}`)
+      .then(response => response.json())
+      .then((userSpheres) => {
+        // Set userSphereExists based on whether the userSphere exists or not
+        setUserSphereExists(userSpheres.length > 0);
+      })
+  }
+
+const toggleAddMode = () => {
+  SetisAddMode(!isAddMode)
+}
 
 
   return <>
@@ -154,10 +183,22 @@ export const UserList = () => {
                 <div>✦ <span className="unbounded">Rising:</span> {profile?.rising?.name}</div>
               </section>
               <section className="bottom">
-                <button
-                  onClick={(clickEvent) => addToMySphere(profile.id)}
-                  className="add-delete-button"> ✢Add
-                </button>
+                {isAddMode && (
+                  <button
+                    onClick={(clickEvent) => {
+                      addToMySphere(profile.id);
+                      toggleAddMode();
+                    }}
+                    className="add-delete-button"> ✢Add</button> 
+                )}
+                {!isAddMode && (
+                  <button
+                    onClick={(clickEvent) => {
+                      addToMySphere(profile.id);
+                      toggleAddMode();
+                    }}
+                    className="add-delete-button"> Remove</button>
+                )}
               </section>
             </section>
           ))

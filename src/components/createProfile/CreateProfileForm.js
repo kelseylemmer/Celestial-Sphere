@@ -175,7 +175,7 @@ export const ProfileForm = () => {
                         required autoFocus
                         type="text"
                         className="form-control"
-                        placeholder="https://i.imgur.com/TgkqULs.png"
+                        placeholder="https://i.imgur.com/1YEDxjr.png"
                         value={profile.picture}
                         onChange={
                             (evt) => {

@@ -1,0 +1,30 @@
+.profile-container {
+    background: linear-gradient(96deg, rgba(193, 210, 246, 1) 0%, rgba(227, 194, 230, 1) 39%, rgba(236, 205, 181, 1) 100%);
+    margin-bottom: 100px;
+}
+
+.profile-pics {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    /* border:2px solid #276451 */
+    margin-top: 50px;
+    filter: grayscale(100%);
+}
+
+.sphere {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.sphere-profiles {
+text-align: center;
+}
+.sphere-title {
+    font-family: 'Unbounded';
+    color: #276451;
+    text-align: center;
+    font-weight: 800;
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"
 
-
+import "./mySphere.css";
 
 export const MySphere = () => {
 
@@ -21,27 +22,21 @@ export const MySphere = () => {
         []
     );
 
-    return <>
-        <h1>My Sphere</h1>
+    return <div className="page-container profile-container">
+        <h1 className="sphere-title">My Sphere</h1>
 
-        <article>
+        <article className="sphere">
             {currentUserSphere.map(
                 (sphereObject) => {
-                    return <section key={`{sphereObject.id}`}>
-                        <header><Link to={`/Profile/${sphereObject.profileId}`}>
-                            <span className="unbounded">{sphereObject?.user.firstName} {sphereObject?.user.lastName}</span>
-                        </Link></header>
-                        <section>
-                            <div>✦ <span className="unbounded">Sun:</span> {sphereObject?.sun?.name}</div>
-                            <div>✦ <span className="unbounded">Moon:</span> {sphereObject?.moon?.name}</div>
-                            <div>✦ <span className="unbounded">Rising:</span> {sphereObject?.rising?.name}</div>
-                        </section>
-                    </section>
+                    return <Link to={`/Profile/${sphereObject?.profile?.id}`}><section className="sphere-profiles" key={`{sphereObject.id}`}>
+                        <div><img src={sphereObject?.profile?.picture} alt="profile picture" className="profile-pics" /></div>
+                            <div>{sphereObject?.profile?.displayName}</div>
+                    </section></Link>
                 }
 
             )
             }
         </article>
-    </>
+    </div>
 
 }
