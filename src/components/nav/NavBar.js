@@ -142,8 +142,13 @@ export const NavBar = () => {
                     </ul>
                 </li>
                 <li className="navbar__item">
-                    <Link className="navbar__link" to="/Users">
-                        Users
+                    <Link className="navbar__link" to="/Houses">
+                        The Houses
+                    </Link>
+                </li>
+                <li className="navbar__item">
+                    <Link className="navbar__link" to="/MySphere">
+                        My Sphere
                     </Link>
                 </li>
                 {localCelestialUser && celestialUserObject.profileId && (
