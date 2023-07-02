@@ -147,6 +147,11 @@ export const NavBar = () => {
                     </Link>
                 </li>
                 <li className="navbar__item">
+                    <Link className="navbar__link" to="/Users">
+                        Users
+                    </Link>
+                </li>
+                <li className="navbar__item">
                     <Link className="navbar__link" to="/MySphere">
                         My Sphere
                     </Link>
