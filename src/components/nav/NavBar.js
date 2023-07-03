@@ -11,9 +11,7 @@ export const NavBar = () => {
     const celestialUserObject = JSON.parse(localCelestialUser);
 
     const [isSignsOpen, setIsSignsOpen] = useState(false);
-    const [isHousesOpen, setIsHousesOpen] = useState(false);
     const [hoveredSign, setHoveredSign] = useState("");
-    const [hoveredHouse, setHoveredHouse] = useState("");
 
 
     const toggleDropdownSigns = () => {
@@ -21,13 +19,9 @@ export const NavBar = () => {
         setIsSignsOpen(!isSignsOpen);
     };
 
-    const toggleDropdownHouses = () => {
-        setIsHousesOpen(!isHousesOpen);
-    };
 
     const closeDropdowns = () => {
         setIsSignsOpen(false);
-        setIsHousesOpen(false);
     };
 
     const handleSignsOptionClick = (option) => {
@@ -35,10 +29,7 @@ export const NavBar = () => {
         navigate(`/Signs/${option}`);
     };
 
-    const handleHousesOptionClick = (option) => {
-        setIsHousesOpen(false);
-        navigate(`/Houses/${option}`);
-    };
+ 
 
     return (
         <nav>
