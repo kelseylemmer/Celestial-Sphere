@@ -26,10 +26,10 @@ export const Profile = () => {
     ProfileInfo()
   }, []);
 
-//this fixes the issue of having to refresh when clicking my profile, but breaks delete button and causes infinite loop :(
-  // useEffect(() => {
-  //   ProfileInfo()
-  // }, [profileData]);
+  useEffect(() => {
+    ProfileInfo();
+  }, [profileId]);
+
 
   useEffect(() => {
     ProfileInfo()
