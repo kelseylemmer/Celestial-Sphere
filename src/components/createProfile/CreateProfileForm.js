@@ -8,7 +8,7 @@ export const ProfileForm = () => {
         sunId: "",
         moonId: "",
         risingId: "",
-        picture: "https: //i.imgur.com/TgkqULs.png",
+        picture: "https://i.imgur.com/1YEDxjr.png",
         displayName: ""
     });
 
