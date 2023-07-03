@@ -24,8 +24,11 @@ export const Profile = () => {
 
   useEffect(() => {
     ProfileInfo()
-
   }, []);
+
+  useEffect(() => {
+    ProfileInfo()
+  }, [profileData]);
 
   useEffect(() => {
     ProfileInfo()
@@ -52,11 +55,13 @@ export const Profile = () => {
     setIsEditMode(false);
   };
 
+  //navigate to Create Profile if user doesnt already have a profile
   useEffect(() => {
     if (currentUserProfileId === null) {
       navigate("/CreateProfile");
     }
   }, [currentUserProfileId]);
+
 
 
   return (

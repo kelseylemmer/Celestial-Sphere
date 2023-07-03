@@ -36,8 +36,7 @@ export const Houses = () => {
           suns.map(
             (sun) => {
               return <section className="house" key={`${sun?.house?.name}`}>
-
-                <h1 className="details-header">The {sun?.house?.name} house</h1>
+                <h1 className="details-header"><span className="flower">✻</span> The {sun?.house?.name} house</h1>
                 <section className="houses-about">
                   <div className="intro">The Planet of {sun?.house?.of}</div>
                   <div>The {sun?.house?.name} house {sun?.house?.about}</div>

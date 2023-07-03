@@ -1,5 +1,5 @@
 .houses-container {
-    background-color: #c4d4f6;
+    background-color: #d0cbef;
     max-width: 100%;
     overflow-x: hidden;
     color: #276451;
@@ -7,7 +7,9 @@
 }
 
 
-
+.house {
+    padding-bottom: 100px;
+}
 
 .house-header {
     display: flex;
@@ -25,13 +27,11 @@
 }
 
 
-.houses-pic {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
 .houses-pic img {
     max-width: 100%;
     height: auto;
+}
+
+.flower {
+color: #D5FD56
 }
