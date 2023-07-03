@@ -2,18 +2,73 @@ import { useEffect, useState } from "react"
 import "./User.css"
 import { Link } from "react-router-dom"
 
-export const UserList = (profileId) => {
+
+const UserListProfile = ({ profile, editMySphere, findProfileInSphere }) => {
+
+  const [isAdded, setIsAdded] = useState(!findProfileInSphere(profile.id))
+
+
+  const toggleAddMode = () => {
+    setIsAdded(!isAdded)
+  }
+
+  return (
+    <section className="user">
+      <header><Link to={`/Profile/${profile.id}`}><span className="unbounded">{profile?.user.firstName} {profile?.user.lastName}</span></Link></header>
+      <section>
+        <div>✦ <span className="unbounded">Sun:</span> {profile?.sun?.name}</div>
+        <div>✦ <span className="unbounded">Moon:</span> {profile?.moon?.name}</div>
+        <div>✦ <span className="unbounded">Rising:</span> {profile?.rising?.name}</div>
+      </section>
+      <section className="bottom">
+        {isAdded && (
+          <button
+            onClick={(clickEvent) => {
+              editMySphere(profile.id, "add");
+              toggleAddMode();
+            }}
+            className="add-delete-button"> ✢Add</button>
+        )}
+        {!isAdded && (
+          <button
+            onClick={(clickEvent) => {
+              editMySphere(profile.id, "remove");
+              toggleAddMode();
+            }}
+            className="add-delete-button"> Remove</button>
+        )}
+      </section>
+    </section>
+  )
+}
+
+
+export const UserList = () => {
   const [profiles, setProfiles] = useState([])
 
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSunSign, setSelectedSunSign] = useState("")
   const [selectedMoonSign, setSelectedMoonSign] = useState("")
   const [selectedRisingSign, setSelectedRisingSign] = useState("")
-  
-  const [isAddMode, SetisAddMode] = useState(false);
-  const [userSphereExists, setUserSphereExists] = useState(false);
+
+  const [userSphere, setUserSphere] = useState([])
+
+  const localCelestialUser = localStorage.getItem("celestial_user");
+  const celestialUserObject = JSON.parse(localCelestialUser);
+  const currentUserId = celestialUserObject.userId;
 
 
+  //fetch all connections in current user's sphere and store them
+  useEffect(
+    () => {
+      fetch(`http://localhost:8088/userSpheres?userId=${currentUserId}`)
+        .then(response => response.json())
+        .then((userSphereArray) => {
+          setUserSphere(userSphereArray)
+        })
+    },
+    []
+  )
 
 
   useEffect(
@@ -27,6 +82,7 @@ export const UserList = (profileId) => {
     []
   )
 
+  //search by name + filter by sun, moon, rising
   const filteredProfiles = profiles.filter((profile) => {
     const fullName = `${profile?.user.firstName} ${profile?.user.lastName}`.toLowerCase();
     const nameMatch = fullName.startsWith(searchTerm.toLowerCase());
@@ -50,69 +106,46 @@ export const UserList = (profileId) => {
     setSelectedRisingSign(event.target.value)
   }
 
+  //filter through userSphere and check for if profileId = profileId exists
+  const findProfileInSphere = (profileId) => {
+    return userSphere.find(sphere => sphere.profileId === profileId)
+  }
 
-  const addToMySphere = (profileId) => {
+  // add or delete
+  const editMySphere = (profileId, action) => {
+
     const localCelestialUser = localStorage.getItem("celestial_user");
     const celestialUserObject = JSON.parse(localCelestialUser);
     const currentUserId = celestialUserObject.userId;
 
-    // Check if the userSphere already exists for the current user and profile
-    fetch(`http://localhost:8088/userSpheres?profileId=${profileId}&userId=${currentUserId}`)
-      .then(response => response.json())
-      .then((userSpheres) => {
-        if (userSpheres.length === 0) {
-          // If the userSphere doesn't exist, create it
-          const mySphereObject = {
-            profileId: profileId,
-            userId: currentUserId,
-          };
-          fetch(`http://localhost:8088/userSpheres`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify(mySphereObject)
-          })
-            .then(response => response.json())
-          } else {
-          // Handle the case when the userSphere already exists
-          const userSphereId = userSpheres[0].id;
 
-          fetch(`http://localhost:8088/userSpheres/${userSphereId}`, {
-            method: "DELETE"
-          })
-        }
+    if (action === "add") {
+      const mySphereObject = {
+        profileId: profileId,
+        userId: currentUserId,
+      };
+      fetch(`http://localhost:8088/userSpheres`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(mySphereObject)
       })
-      .catch(error => {
-        // Handle the error
-      });
-  }
-
-useEffect(() => {
-  ObjectExists()
-}, []);
-
-useEffect(() => {
-  ObjectExists()
-}, [userSphereExists])
-
-  const localCelestialUser = localStorage.getItem("celestial_user");
-  const celestialUserObject = JSON.parse(localCelestialUser);
-  const currentUserId = celestialUserObject.userId;
-
-const ObjectExists = () => {
-    // Fetch userSpheres for the current user and profile
-    fetch(`http://localhost:8088/userSpheres?profileId=${profileId}&userId=${currentUserId}`)
-      .then(response => response.json())
-      .then((userSpheres) => {
-        // Set userSphereExists based on whether the userSphere exists or not
-        setUserSphereExists(userSpheres.length > 0);
+        .then(response => response.json())
+        .then(response => {
+          setUserSphere([...userSphere, response])
+        })
+    } else if (action === "remove") {
+      const profileToRemove = findProfileInSphere(profileId).id
+      fetch(`http://localhost:8088/userSpheres/${profileToRemove}`, {
+        method: "DELETE",
       })
-  }
-
-const toggleAddMode = () => {
-  SetisAddMode(!isAddMode)
-}
+        .then(response => response.json())
+        .then(response => {
+          setUserSphere(userSphere.filter(connection => connection.id !== profileToRemove))
+        })
+    }
+  };
 
 
   return <>
@@ -172,35 +205,10 @@ const toggleAddMode = () => {
           </select>
         </div>
       </section>
-      <article className="users ">
+      <article className="users">
         {filteredProfiles.length > 0 ? (
           filteredProfiles.map((profile) => (
-            <section className="user" key={`${profile.id}`}>
-              <header><Link to={`/Profile/${profile.id}`}><span className="unbounded">{profile?.user.firstName} {profile?.user.lastName}</span></Link></header>
-              <section>
-                <div>✦ <span className="unbounded">Sun:</span> {profile?.sun?.name}</div>
-                <div>✦ <span className="unbounded">Moon:</span> {profile?.moon?.name}</div>
-                <div>✦ <span className="unbounded">Rising:</span> {profile?.rising?.name}</div>
-              </section>
-              <section className="bottom">
-                {isAddMode && (
-                  <button
-                    onClick={(clickEvent) => {
-                      addToMySphere(profile.id);
-                      toggleAddMode();
-                    }}
-                    className="add-delete-button"> ✢Add</button> 
-                )}
-                {!isAddMode && (
-                  <button
-                    onClick={(clickEvent) => {
-                      addToMySphere(profile.id);
-                      toggleAddMode();
-                    }}
-                    className="add-delete-button"> Remove</button>
-                )}
-              </section>
-            </section>
+            <UserListProfile profile={profile} editMySphere={editMySphere} findProfileInSphere={findProfileInSphere} key={`${profile.id}`} />
           ))
         ) : (
           <p>No matching users found.</p>

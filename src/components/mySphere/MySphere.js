@@ -28,7 +28,7 @@ export const MySphere = () => {
         <article className="sphere">
             {currentUserSphere.map(
                 (sphereObject) => {
-                    return <Link to={`/Profile/${sphereObject?.profile?.id}`}><section className="sphere-profiles" key={`{sphereObject.id}`}>
+                    return <Link to={`/Profile/${sphereObject?.profile?.id}`} key={sphereObject.id}><section className="sphere-profiles" >
                         <div><img src={sphereObject?.profile?.picture} alt="profile picture" className="profile-pics" /></div>
                             <div>{sphereObject?.profile?.displayName}</div>
                     </section></Link>
