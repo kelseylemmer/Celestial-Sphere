@@ -1,190 +1,139 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
-import { useState } from "react";
+
 
 
 
 export const NavBar = () => {
-    const navigate = useNavigate();
+
+    const navigate = useNavigate()
 
     const localCelestialUser = localStorage.getItem("celestial_user");
     const celestialUserObject = JSON.parse(localCelestialUser);
 
-    const [isSignsOpen, setIsSignsOpen] = useState(false);
-    const [hoveredSign, setHoveredSign] = useState("");
-
-
-    const toggleDropdownSigns = () => {
-
-        setIsSignsOpen(!isSignsOpen);
-    };
-
-
-    const closeDropdowns = () => {
-        setIsSignsOpen(false);
-    };
-
-    const handleSignsOptionClick = (option) => {
-        setIsSignsOpen(false);
-        navigate(`/Signs/${option}`);
-    };
-
- 
-
     return (
-        <nav>
-            <ul className="navbar">
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/Home">
+        <nav id="nav">
+            <ul>
+                <li>
+                    <Link to="/Home">
                         Home
                     </Link>
                 </li>
-                <li className="navbar__item">
-                    ✼
-                </li>
-                {/* <li className="navbar__item">
-                    <Link className="navbar__link" to="/SunSigns">
-                        Sun Signs
-                    </Link>
-                </li>
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/MoonSigns">
-                        Moon Signs
-                    </Link>
-                </li>
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/RisingSigns">
-                        Rising Signs
-                    </Link>
-                </li> */}
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/BirthCharts">
+                <li>
+                    <Link to="/BirthCharts">
                         Birth Charts
                     </Link>
                 </li>
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/Houses">
+                <li>
+                    <Link to="/Houses">
                         Houses
                     </Link>
                 </li>
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/Planets">
+                <li>
+                    <Link to="/Planets">
                         Planets
                     </Link>
                 </li>
-                <li className="navbar__item" onMouseLeave={closeDropdowns}>
-                    <ul
-                        className={`navbar__link ${isSignsOpen ? "active" : ""}`}
-                        onMouseEnter={toggleDropdownSigns}
-                    >
-                        <li>Signs</li>
-                        {isSignsOpen && (
-                            <ul className="dropdown">
-                                <li className={hoveredSign === "Aries" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Aries")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Aries")}>
-                                    Aries </li>
-                                <li className={hoveredSign === "Taurus" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Taurus")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Taurus")}>
-                                    Taurus</li>
-                                <li className={hoveredSign === "Gemini" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Gemini")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Gemini")}>
-                                    Gemini</li>
-                                <li className={hoveredSign === "Cancer" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Cancer")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Cancer")}>
-                                    Cancer</li>
-                                <li className={hoveredSign === "Leo" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Leo")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Leo")}>
-                                    Leo</li>
-                                <li className={hoveredSign === "Virgo" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Virgo")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Virgo")}>
-                                    Virgo</li>
-                                <li className={hoveredSign === "Libra" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Libra")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Libra")}>
-                                    Libra</li>
-                                <li className={hoveredSign === "Scorpio" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Scorpio")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Scorpio")}>
-                                    Scorpio</li>
-                                <li className={hoveredSign === "Sagittarius" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Sagittarius")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Sagittarius")}>
-                                    Sagittarius</li>
-                                <li className={hoveredSign === "Capricorn" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Capricorn")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Capricorn")}>
-                                    Capricorn</li>
-                                <li className={hoveredSign === "Aquarius" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Aquarius")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Aquarius")}>
-                                    Aquarius
-                                </li>
-                                <li className={hoveredSign === "Pisces" ? "active" : ""}
-                                    onMouseEnter={() => setHoveredSign("Pisces")}
-                                    onMouseLeave={() => setHoveredSign("")}
-                                    onClick={() => handleSignsOptionClick("Pisces")}>
-                                    Pisces</li>
-                            </ul>
-                        )}
+                <li>
+                    <Link to="#">Signs</Link>
+                    <ul>
+                        <li>
+                            <Link to="/Signs/Aries">
+                                Aries
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Taurus">
+                                Taurus
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Gemini">
+                                Gemini
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Cancer">
+                                Cancer
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Leo">
+                                Leo
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Virgo">
+                                Virgo
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Libra">
+                                Libra
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Scorpio">
+                                Scorpio
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Sagittarius">
+                                Sagittarius
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Capricorn">
+                                Capricorn
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Aquarius">
+                                Aquarius
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Signs/Pisces">
+                                Pisces
+                            </Link>
+                        </li>
                     </ul>
                 </li>
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/Elements">
+                <li>
+                    <Link to="/Elements">
                         Elements
                     </Link>
                 </li>
-                    
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/Users">
+                <li>
+                    <Link to="/Users">
                         Users
                     </Link>
                 </li>
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/MySphere">
-                        My Sphere
-                    </Link>
-                </li>
                 {localCelestialUser && celestialUserObject.profileId && (
-                    <li className="navbar__item">
+                    <li>
+                        <Link to="/MySphere">
+                            My Sphere
+                        </Link>
+                    </li>
+                )}
+                {localCelestialUser && celestialUserObject.profileId && (
+                    <li>
                         <Link
-                            className="navbar__link"
-                            to={`/Profile/${celestialUserObject.profileId}`}
-                        >
+                            to={`/Profile/${celestialUserObject.profileId}`}>
                             My Profile
                         </Link>
                     </li>
                 )}
                 {localCelestialUser && !celestialUserObject.profileId && (
-                    <li className="navbar__item">
-                        <Link className="navbar__link" to="/CreateProfile">
+                    <li>
+                        <Link to="/CreateProfile">
                             Create Profile
                         </Link>
                     </li>
                 )}
-                <li className="navbar__item">
-                    ✼
-                </li>
                 {localCelestialUser && (
                     <li className="navbar__item navbar__logout">
                         <Link
-                            className="navbar__link"
                             to=""
                             onClick={() => {
                                 localStorage.removeItem("celestial_user");

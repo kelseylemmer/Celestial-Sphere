@@ -1,85 +1,72 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
+nav {
     background-color: #D5FD56;
-    padding: 10px 20px;
-    list-style-type: none;
+}
+
+nav ul {
+    padding: 0;
     margin: 0;
-    border-bottom: 2px solid #276451;
+    list-style: none;
+    position: relative;
+    display: flex;
 }
 
-.navbar__item {
-    /* margin: 0 10px; */
-    justify-content: space-around;
+nav ul li {
+    background-color: #D5FD56;
 }
 
-.navbar__link {
-    text-decoration: none;
-    color: #276451;
-    font-weight: bold;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-
+nav ul li:last-child {
+    margin-left: auto;
 }
 
-.dropdown {
-    position: absolute;
-    background-color: rgba(213, 253, 86);
-    top: 56x;
-    list-style-type: none;
-    text-align: start;
-    display: none;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown li {
-    /* margin-bottom: 10px; */
-    list-style-type: none;
-    padding: 0
-    
-}
-
-.dropdown li:hover {
-    background-color: rgba(213, 253, 86, 0.5);
-    color: #276451
-}
-
-.navbar__link.active .dropdown {
+nav a {
     display: block;
-
+    padding: 0 10px;
+    color: #276451;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
 }
 
-.navbar__logout {
-    margin-left: 5px;
+nav a:hover {
+    background-color: #276451;
+    color: #D5FD56
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
 }
 
 
-.navbar__link:hover {
-    color: #dfb0f6;
+/* Change this in order to change the Dropdown symbol */
+li>a:after {
+    content: ' ◢';
+    font-size: 12px;
 }
 
-
-ul.navbar {
-    padding: 0px 0px;
-}
-
-li.navbar__item {
-    margin: 0 0 0 0;
-    padding: 0px 0px 0px 0px;
-    display: flex
-}
-
-ul.navbar__link {
-    padding: 0px 0px 0px 0px;
-    justify-content: center;
-}
-
-li {
-    padding: 10px 0px 10px 0px;
-}
-
-a.navbar__link {
-    justify-content: center;
-    align-items: center;
+li>a:only-child:after {
+    content: '';
 }
