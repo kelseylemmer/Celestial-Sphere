@@ -20,7 +20,7 @@ export const Login = () => {
                 firstName: user.firstName,
                 lastName: user.lastName,
                 profileId: null,
-                userId: null
+                userId: user.id
             }
 
             const foundProfiles = await fetch(`http://localhost:8088/profiles?userId=${user.id}`)
