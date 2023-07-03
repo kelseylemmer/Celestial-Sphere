@@ -71,11 +71,31 @@ export const EditProfile = ({ onSave }) => {
 
     const DeleteButton = ({ currentUserProfileId }) => {
         const navigate = useNavigate();
+        const localCelestialUser = localStorage.getItem("celestial_user");
+        const celestialUserObject = JSON.parse(localCelestialUser);
+        const currentUserId = celestialUserObject.userId;
 
         const handleDelete = () => {
-            fetch(`http://localhost:8088/profiles/${currentUserProfileId}`, {
-                method: "DELETE"
-            })
+            // Fetch userSpheres with currentUserId
+            fetch(`http://localhost:8088/userSpheres?userId=${currentUserId}`)
+                .then(response => response.json())
+                .then(userSpheres => {
+                    // Delete each userSphere individually
+                    const deletionPromises = userSpheres.map(userSphere =>
+                        fetch(`http://localhost:8088/userSpheres/${userSphere.id}`, {
+                            method: "DELETE"
+                        })
+                    );
+
+                    // Wait for all deletions to complete
+                    return Promise.all(deletionPromises);
+                })
+                .then(() => {
+                    // Delete profile
+                    fetch(`http://localhost:8088/profiles/${currentUserProfileId}`, {
+                        method: "DELETE"
+                    });
+                })
                 .then(() => {
                     // Update local storage
                     const localCelestialUser = localStorage.getItem("celestial_user");
@@ -83,15 +103,13 @@ export const EditProfile = ({ onSave }) => {
                     celestialUserObject.profileId = null;
                     localStorage.setItem("celestial_user", JSON.stringify(celestialUserObject));
                 })
-                .then(
-                    navigate("/Home")
-                )
-
+                .then(() => {
+                    navigate("/Home");
+                })
                 .catch((error) => {
-                    console.error("Error deleting profile:", error);
+                    console.error("Error deleting userSpheres or profile:", error);
                 });
         };
-
 
         return (
             <button onClick={handleDelete} className="btn">
@@ -99,6 +117,7 @@ export const EditProfile = ({ onSave }) => {
             </button>
         );
     };
+
 
 
     return (
