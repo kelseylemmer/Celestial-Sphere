@@ -27,7 +27,7 @@ const UserListProfile = ({ profile, editMySphere, findProfileInSphere }) => {
               editMySphere(profile.id, "add");
               toggleAddMode();
             }}
-            className="add-delete-button"> ✢Add</button>
+            className="add-delete-button"> ✢ add</button>
         )}
         {!isAdded && (
           <button
@@ -35,7 +35,7 @@ const UserListProfile = ({ profile, editMySphere, findProfileInSphere }) => {
               editMySphere(profile.id, "remove");
               toggleAddMode();
             }}
-            className="add-delete-button"> Remove</button>
+            className="add-delete-button"> ☹️ remove</button>
         )}
       </section>
     </section>
