@@ -1,7 +1,31 @@
+import { useEffect, useState } from "react";
 import "./profile.css";
+import { Link } from "react-router-dom";
+
 
 
 export const ViewProfile = ({ data }) => {
+
+  const [currentUserSphere, setCurrentUserSphere] = useState([])
+
+  useEffect(() => {
+    fetch(`http://localhost:8088/userSpheres?_expand=profile`)
+      .then(response => response.json())
+      .then(userSphereArray => {
+        const localCelestialUser = localStorage.getItem("celestial_user");
+        const celestialUserObject = JSON.parse(localCelestialUser);
+        const currentUserId = celestialUserObject.userId;
+
+        const filteredUserSphere = userSphereArray.filter(
+          item =>
+            item.userId === currentUserId &&
+            item?.profile?.moonId === data?.moon?.compatibility
+        );
+        setCurrentUserSphere(filteredUserSphere);
+      });
+  }, [data]);
+
+
   return (
     <>
 
@@ -14,7 +38,23 @@ export const ViewProfile = ({ data }) => {
           <div>✦ <span className="unbounded">My Moon Sign:</span> {data?.moon?.name}</div>
           <div>✦ <span className="unbounded">My Rising Sign:</span> {data?.rising?.name}</div>
         </section>
+
+        <article className="sphere">
+          {currentUserSphere.map(
+            (sphereObject) => {
+              return <Link to={`/Profile/${sphereObject?.profile?.id}`}><section className="sphere-profiles" key={`{sphereObject.id}`}>
+                <div><img src={sphereObject?.profile?.picture} alt="profile picture" className="profile-pics" /></div>
+                <div>{sphereObject?.profile?.displayName}</div>
+              </section></Link>
+            }
+
+          )
+          }
+        </article>
+
       </div>  
+
+
 
       
         <article className="big-three-details">

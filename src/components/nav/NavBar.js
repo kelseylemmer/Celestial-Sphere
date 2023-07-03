@@ -67,6 +67,11 @@ export const NavBar = () => {
                     </Link>
                 </li> */}
                 <li className="navbar__item">
+                    <Link className="navbar__link" to="/BirthCharts">
+                        Birth Charts
+                    </Link>
+                </li>
+                <li className="navbar__item">
                     <Link className="navbar__link" to="/Houses">
                         Houses
                     </Link>
