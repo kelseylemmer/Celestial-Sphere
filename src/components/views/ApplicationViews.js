@@ -10,6 +10,7 @@ import { MySphere } from "../mySphere/MySphere.js"
 import { Houses } from "../staticPages/houses/Houses.js"
 import { Planets } from "../staticPages/planets/Planets.js"
 import { BirthCharts } from "../staticPages/birthCharts/BirthCharts.js"
+import { Signs } from "../signs/Signs.js"
 
 
 
@@ -31,6 +32,7 @@ export const ApplicationViews = () => {
 				<Route path="/BirthCharts" element={<BirthCharts />}></Route>
 				<Route path="/Houses" element={<Houses />}></Route>
 				<Route path="/Planets" element={<Planets />}></Route>
+				<Route path="/Signs/:signName" element={<Signs />}></Route>
 				<Route path="/Users" element={<UserList />}></Route>
 				<Route path="/MySphere" element={<MySphere />}></Route>
 				<Route path="/Profile/:profileId" element={<Profile />}></Route>
