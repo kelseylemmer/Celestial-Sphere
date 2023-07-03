@@ -12,13 +12,13 @@ export const ViewProfile = ({ data }) => {
     fetch(`http://localhost:8088/userSpheres?_expand=profile`)
       .then(response => response.json())
       .then(userSphereArray => {
-        const localCelestialUser = localStorage.getItem("celestial_user");
-        const celestialUserObject = JSON.parse(localCelestialUser);
-        const currentUserId = celestialUserObject.userId;
+        // const localCelestialUser = localStorage.getItem("celestial_user");
+        // const celestialUserObject = JSON.parse(localCelestialUser);
+        // const currentUserId = celestialUserObject.userId;
 
         const filteredUserSphere = userSphereArray.filter(
           item =>
-            item.userId === currentUserId &&
+            item.userId === data?.userId &&
             item?.profile?.moonId === data?.moon?.compatibility
         );
         setCurrentUserSphere(filteredUserSphere);
@@ -30,34 +30,38 @@ export const ViewProfile = ({ data }) => {
     <>
 
       <div className="top">
-        <img src={data?.picture} alt="profile picture" className="profile-pic"/>
-
+        <img src={data?.picture} alt="profile picture" className="profile-pic" />
+        <section className="top-right">
         <section className="big-three">
-          <h2 className="name">{data?.displayName}</h2>
-          <div>✦ <span className="unbounded">My Sun Sign:</span> {data?.sun?.name}</div>
-          <div>✦ <span className="unbounded">My Moon Sign:</span> {data?.moon?.name}</div>
-          <div>✦ <span className="unbounded">My Rising Sign:</span> {data?.rising?.name}</div>
+            <h2 className="name">{data?.displayName}</h2>
+            <div>✦ <span className="unbounded">My Sun Sign:</span> {data?.sun?.name}</div>
+            <div>✦ <span className="unbounded">My Moon Sign:</span> {data?.moon?.name}</div>
+            <div>✦ <span className="unbounded">My Rising Sign:</span> {data?.rising?.name}</div>
+          </section>
+
+          <article className="sphere">
+            <section className="all-sphere">
+            <h2 className="name">Compatible Friends</h2>
+            <section className="all-profiles">
+            {currentUserSphere.map(
+              (matchingSphere) => {
+                return <section className="sphere-profiles" key={matchingSphere.id}>
+                  <div><Link to={`/Profile/${matchingSphere?.profile?.id}`} ><img src={matchingSphere?.profile?.picture} alt="profile picture" className="profile-pictures" /></Link></div>
+                  <div>{matchingSphere?.profile?.displayName}</div>
+                </section>
+              }
+            )}
+            </section>
+          </section>
+          </article>
         </section>
 
-        <article className="sphere">
-          {currentUserSphere.map(
-            (sphereObject) => {
-              return <Link to={`/Profile/${sphereObject?.profile?.id}`}><section className="sphere-profiles" key={`{sphereObject.id}`}>
-                <div><img src={sphereObject?.profile?.picture} alt="profile picture" className="profile-pics" /></div>
-                <div>{sphereObject?.profile?.displayName}</div>
-              </section></Link>
-            }
-
-          )
-          }
-        </article>
-
-      </div>  
+      </div>
 
 
 
-      
-        <article className="big-three-details">
+
+      <article className="big-three-details">
         <div className='bottom'>
           <h1 className="details-header">The sun in {data?.sun?.name}... </h1>
           <div className="info">
@@ -68,7 +72,7 @@ export const ViewProfile = ({ data }) => {
             <div>{data?.sun?.mode?.name} modality {data?.sun?.mode?.about}</div>
             <div>{data?.sun?.element?.name} {data?.sun?.element?.about}</div>
             <br></br>
-            <div className="intro">{data?.sun?.name} is ruled by {data?.sun?.planet?.name}.</div> 
+            <div className="intro">{data?.sun?.name} is ruled by {data?.sun?.planet?.name}.</div>
             <div>{data?.sun?.planet?.name} is {data?.sun?.planet?.description}</div>
             <br></br>
             <div><span className="intro">Symbol:</span> {data?.sun?.symbol}</div>
@@ -107,10 +111,10 @@ export const ViewProfile = ({ data }) => {
             <div><span className="intro">Symbol:</span> {data?.rising?.symbol}</div>
           </div>
         </div>
-        </article>
-      
-      </>
-      );
+      </article>
+
+    </>
+  );
 };
 
 

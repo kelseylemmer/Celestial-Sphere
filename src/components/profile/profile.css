@@ -92,9 +92,10 @@ h2.name {
     width: 300px;
     height: 300px;
     /* border:2px solid #276451 */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     filter: grayscale(100%);
 }
+
 
 .intro {
     font-family: 'Unbounded';
@@ -105,4 +106,49 @@ h2.name {
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+}
+
+.sphere {
+    color: #276451;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid #276451;
+    border-radius: 20px;
+    padding: 20px;
+}
+.all-sphere{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile-pictures {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* border:2px solid #276451 */
+    filter: grayscale(100%);
+    align-self: center;
+    margin: 0px 0px 0px;
+}
+.all-profiles{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+.sphere-profiles {
+    margin: 10px 10px 10px;
+}
+
+.top-right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-left: 20px;
+}
+
+.top{
+    padding-top: 50px;
+    align-content: center;
 }
