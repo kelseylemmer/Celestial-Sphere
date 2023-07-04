@@ -108,6 +108,11 @@ export const NavBar = () => {
                                 Elements
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/Aspects">
+                                Aspects
+                            </Link>
+                        </li>
                     </ul>
                 </li>
                 <li>
