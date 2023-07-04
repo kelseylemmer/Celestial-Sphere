@@ -39,6 +39,16 @@ export const NavBar = () => {
                             </Link>
                         </li>
                         <li>
+                            <Link to="/Elements">
+                                Elements
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Aspects">
+                                Aspects
+                            </Link>
+                        </li>
+                        <li>
                             <Link to="#">Signs</Link>
                             <ul>
                                 <li>
@@ -103,16 +113,7 @@ export const NavBar = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <Link to="/Elements">
-                                Elements
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Aspects">
-                                Aspects
-                            </Link>
-                        </li>
+
                     </ul>
                 </li>
                 <li>
