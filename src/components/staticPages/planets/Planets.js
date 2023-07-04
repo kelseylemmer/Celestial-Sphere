@@ -25,10 +25,15 @@ export const Planets = () => {
             (planet) => {
               return <section className="planet" key={`${planet.id}`}>
                 <h1 className="details-header">{planet.symbol} {planet.name}</h1>
-                <div>{planet.description}</div>
+                <div>Where {planet.name} falls in your birth chart {planet.impact}</div>
                 <br></br>
-                <div>{planet.name} spends about {planet.transit} in each sign.</div>
-                <div><span className="intro">{planet.name} rules:</span> {planet.rules}</div>
+                <div>{planet.description}</div>
+
+                <br></br>
+                <section className="blurb">
+                  <div>{planet.name} spends about {planet.transit} in each sign.</div>
+                  <div><span className="intro">{planet.name} rules:</span> {planet.rules}</div>
+                </section>
               </section>
             }
           )
