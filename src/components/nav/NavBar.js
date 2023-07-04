@@ -8,6 +8,7 @@ export const NavBar = () => {
 
     const navigate = useNavigate()
 
+
     const localCelestialUser = localStorage.getItem("celestial_user");
     const celestialUserObject = JSON.parse(localCelestialUser);
 
@@ -20,7 +21,7 @@ export const NavBar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="#">What Does It Mean?</Link>
+                    <Link to="#">Astrology 101</Link>
                     <ul>
                         <li>
                             <Link to="/BirthCharts">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Houses.css"
+import { Link } from "react-router-dom"
 
 
 export const Houses = () => {
@@ -36,10 +37,12 @@ export const Houses = () => {
           suns.map(
             (sun) => {
               return <section className="house" key={`${sun?.house?.name}`}>
-                <h1 className="details-header"><span className="flower">✻</span> The {sun?.house?.name} house</h1>
+                <h1 className="details-header"><span className="flower">✻</span> The {sun?.house?.name} House</h1>
                 <section className="houses-about">
                   <div className="intro">The Planet of {sun?.house?.of}</div>
-                  <div>The {sun?.house?.name} house {sun?.house?.about}</div>
+                  <div>The {sun?.house?.name} house, {sun?.house?.about}</div>
+                  <br></br>
+                  <div><span className="intro">Ruled by:</span> <Link to={`/Signs/${sun.name}`}>{sun?.name} →</Link></div>
                 </section>
 
 
@@ -48,7 +51,7 @@ export const Houses = () => {
           )
         }
       </article>
-    
+
     </div>
   </>
 }
