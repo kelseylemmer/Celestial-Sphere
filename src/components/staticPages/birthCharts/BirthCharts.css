@@ -1,3 +1,27 @@
-.chart-container {
-    background-color: rgba(193, 210, 246, 255);
+.charts-container {
+    background-color: #c0d2f6;
+    max-width: 100%;
+    overflow-x: hidden;
+    color: #276451;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 100px;
+}
+
+.charts-title {
+    font-family: 'Unbounded';
+    color: #276451;
+    text-align: center;
+    font-weight: 800;
+}
+
+.chart-pic {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
 }

@@ -1,15 +1,21 @@
-.signs-container{
+.signs-container {
     background-color: #e7c7cf;
     max-width: 100%;
-        overflow-x: hidden;
-        color: #276451;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    color: #276451;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-.sign-title{
+.sign-title {
     font-family: 'Unbounded';
-        color: #276451;
-        text-align: center;
-        font-weight: 800;
+    color: #276451;
+    text-align: center;
+    font-weight: 800;
+}
+
+.quick-facts {
+    border-radius: 25px;
+    border: 2px solid #276451;
+    padding: 10px
 }
