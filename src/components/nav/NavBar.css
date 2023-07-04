@@ -1,5 +1,6 @@
 nav {
     background-color: #D5FD56;
+    border-bottom: 2px solid #276451;
 }
 
 nav ul {
@@ -64,7 +65,7 @@ nav ul ul ul li {
 /* Change this in order to change the Dropdown symbol */
 li>a:after {
     content: ' ◢';
-    font-size: 12px;
+    font-size: 8px;
 }
 
 li>a:only-child:after {

@@ -20,93 +20,98 @@ export const NavBar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/BirthCharts">
-                        Birth Charts
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/Houses">
-                        Houses
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/Planets">
-                        Planets
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#">Signs</Link>
+                    <Link to="#">What Does It Mean?</Link>
                     <ul>
                         <li>
-                            <Link to="/Signs/Aries">
-                                Aries
+                            <Link to="/BirthCharts">
+                                Birth Charts
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Signs/Taurus">
-                                Taurus
+                            <Link to="/Houses">
+                                Houses
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Signs/Gemini">
-                                Gemini
+                            <Link to="/Planets">
+                                Planets
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Signs/Cancer">
-                                Cancer
-                            </Link>
+                            <Link to="#">Signs</Link>
+                            <ul>
+                                <li>
+                                    <Link to="/Signs/Aries">
+                                        Aries
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Taurus">
+                                        Taurus
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Gemini">
+                                        Gemini
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Cancer">
+                                        Cancer
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Leo">
+                                        Leo
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Virgo">
+                                        Virgo
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Libra">
+                                        Libra
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Scorpio">
+                                        Scorpio
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Sagittarius">
+                                        Sagittarius
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Capricorn">
+                                        Capricorn
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Aquarius">
+                                        Aquarius
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Signs/Pisces">
+                                        Pisces
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <Link to="/Signs/Leo">
-                                Leo
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Signs/Virgo">
-                                Virgo
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Signs/Libra">
-                                Libra
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Signs/Scorpio">
-                                Scorpio
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Signs/Sagittarius">
-                                Sagittarius
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Signs/Capricorn">
-                                Capricorn
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Signs/Aquarius">
-                                Aquarius
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Signs/Pisces">
-                                Pisces
+                            <Link to="/Elements">
+                                Elements
                             </Link>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link to="/Elements">
-                        Elements
-                    </Link>
-                </li>
-                <li>
                     <Link to="/Users">
-                        Users
+                        Celestial Users
                     </Link>
                 </li>
                 {localCelestialUser && celestialUserObject.profileId && (
