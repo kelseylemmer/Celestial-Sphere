@@ -1,6 +1,46 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./profile.css";
+import useLocalStorageState from "use-local-storage-state";
+
+const DeleteButton = ({ setCelestialUserObject, user }) => {
+    console.log("delete button", user)
+    const navigate = useNavigate();
+
+    const currentUserProfileId = user.profileId;
+    const currentUserId = user.userId;
+
+    const handleDelete = async () => {
+        const allUserSpheresRequest = await fetch(`http://localhost:8088/userSpheres?userId=${currentUserId}`)
+        const allUserSpheres = await allUserSpheresRequest.json()
+
+        // Delete each userSphere individually
+        const deletionPromises = allUserSpheres.map(userSphere =>
+            fetch(`http://localhost:8088/userSpheres/${userSphere.id}`, {
+                method: "DELETE"
+            })
+        );
+
+        // Wait for all deletions to complete
+        await Promise.all(deletionPromises);
+
+        // Delete profile
+        await fetch(`http://localhost:8088/profiles/${currentUserProfileId}`, {
+            method: "DELETE"
+        });
+
+        setCelestialUserObject({ ...user, profileId: null })
+
+        navigate("/Home");
+
+    };
+
+    return (
+        <button onClick={handleDelete} className="btn">
+            Delete Profile
+        </button>
+    );
+};
 
 
 export const EditProfile = ({ onSave }) => {
@@ -14,8 +54,7 @@ export const EditProfile = ({ onSave }) => {
         risingId: "",
     });
 
-    const localCelestialUser = localStorage.getItem("celestial_user");
-    const celestialUserObject = JSON.parse(localCelestialUser);
+    const [celestialUserObject, setCelestialUserObject] = useLocalStorageState("celestial_user")
     const currentUserProfileId = celestialUserObject.profileId
 
 
@@ -67,58 +106,6 @@ export const EditProfile = ({ onSave }) => {
                 window.alert("Your Profile Has Been Successfully Updated");
             })
     }
-
-
-    const DeleteButton = ({ currentUserProfileId }) => {
-        const navigate = useNavigate();
-        const localCelestialUser = localStorage.getItem("celestial_user");
-        const celestialUserObject = JSON.parse(localCelestialUser);
-        const currentUserId = celestialUserObject.userId;
-
-        const handleDelete = () => {
-            // Fetch userSpheres with currentUserId
-            fetch(`http://localhost:8088/userSpheres?userId=${currentUserId}`)
-                .then(response => response.json())
-                .then(userSpheres => {
-                    // Delete each userSphere individually
-                    const deletionPromises = userSpheres.map(userSphere =>
-                        fetch(`http://localhost:8088/userSpheres/${userSphere.id}`, {
-                            method: "DELETE"
-                        })
-                    );
-
-                    // Wait for all deletions to complete
-                    return Promise.all(deletionPromises);
-                })
-                .then(() => {
-                    // Delete profile
-                    fetch(`http://localhost:8088/profiles/${currentUserProfileId}`, {
-                        method: "DELETE"
-                    });
-                })
-                .then(() => {
-                    // Update local storage
-                    const localCelestialUser = localStorage.getItem("celestial_user");
-                    const celestialUserObject = JSON.parse(localCelestialUser);
-                    celestialUserObject.profileId = null;
-                    localStorage.setItem("celestial_user", JSON.stringify(celestialUserObject));
-                })
-                .then(() => {
-                    navigate("/Home");
-                })
-                .catch((error) => {
-                    console.error("Error deleting userSpheres or profile:", error);
-                });
-        };
-
-        return (
-            <button onClick={handleDelete} className="btn">
-                Delete Profile
-            </button>
-        );
-    };
-
-
 
     return (
         <form className="ProfileForm">
@@ -230,7 +217,7 @@ export const EditProfile = ({ onSave }) => {
                 <button onClick={handleSaveButtonClick} className="btn btn-primary">
                     Update Profile
                 </button>
-                <DeleteButton currentUserProfileId={currentUserProfileId} />
+                {/* <DeleteButton user={celestialUserObject} setCelestialUserObject={setCelestialUserObject} /> */}
             </div>
 
         </form>

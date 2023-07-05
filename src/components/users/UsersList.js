@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "./User.css"
 import { Link } from "react-router-dom"
+import useLocalStorageState from "use-local-storage-state"
 
 
 const UserListProfile = ({ profile, editMySphere, findProfileInSphere }) => {
@@ -53,8 +54,7 @@ export const UserList = () => {
 
   const [userSphere, setUserSphere] = useState([])
 
-  const localCelestialUser = localStorage.getItem("celestial_user");
-  const celestialUserObject = JSON.parse(localCelestialUser);
+  const [celestialUserObject, setCelestialUserObject] = useLocalStorageState("celestial_user")
   const currentUserId = celestialUserObject.userId;
 
 
@@ -116,8 +116,6 @@ export const UserList = () => {
   // add or delete
   const editMySphere = (profileId, action) => {
 
-    const localCelestialUser = localStorage.getItem("celestial_user");
-    const celestialUserObject = JSON.parse(localCelestialUser);
     const currentUserId = celestialUserObject.userId;
 
 

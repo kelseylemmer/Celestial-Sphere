@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
+import useLocalStorageState from "use-local-storage-state";
 
 
 
@@ -9,8 +10,7 @@ export const NavBar = () => {
     const navigate = useNavigate()
 
 
-    const localCelestialUser = localStorage.getItem("celestial_user");
-    const celestialUserObject = JSON.parse(localCelestialUser);
+    const [user, setUser, { removeItem }] = useLocalStorageState("celestial_user")
 
     return (
         <nav id="nav">
@@ -121,34 +121,34 @@ export const NavBar = () => {
                         Celestial Users
                     </Link>
                 </li>
-                {localCelestialUser && celestialUserObject.profileId && (
+                {user && user.profileId && (
                     <li>
                         <Link to="/MySphere">
                             My Sphere
                         </Link>
                     </li>
                 )}
-                {localCelestialUser && celestialUserObject.profileId && (
+                {user && user.profileId && (
                     <li>
                         <Link
-                            to={`/Profile/${celestialUserObject.profileId}`}>
+                            to={`/Profile/${user.profileId}`}>
                             My Profile
                         </Link>
                     </li>
                 )}
-                {localCelestialUser && !celestialUserObject.profileId && (
+                {user && !user.profileId && (
                     <li>
                         <Link to="/CreateProfile">
                             Create Profile
                         </Link>
                     </li>
                 )}
-                {localCelestialUser && (
+                {user && (
                     <li className="navbar__item navbar__logout">
                         <Link
                             to=""
                             onClick={() => {
-                                localStorage.removeItem("celestial_user");
+                                removeItem();
                                 navigate("/", { replace: true });
                             }}
                         >

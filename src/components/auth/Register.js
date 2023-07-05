@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+import useLocalStorageState from "use-local-storage-state"
 
 export const Register = (props) => {
     const [user, setUser] = useState({
@@ -9,6 +10,8 @@ export const Register = (props) => {
         email: ""
     })
     let navigate = useNavigate()
+
+    const [celestialUser, setCelestialUser] = useLocalStorageState("celestial_user")
 
     const registerNewUser = () => {
         return fetch("http://localhost:8088/users", {
@@ -21,10 +24,10 @@ export const Register = (props) => {
             .then(res => res.json())
             .then(createdUser => {
                 if (createdUser.hasOwnProperty("id")) {
-                    localStorage.setItem("celestial_user", JSON.stringify({
+                    setCelestialUser({
                         id: createdUser.id,
                         userId: createdUser.id,
-                    }))
+                    })
 
                     navigate("/Home")
                 }

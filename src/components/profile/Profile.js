@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { EditProfile } from "./EditProfile.js";
 import { ViewProfile } from "./ViewProfile.js";
 import "./profile.css";
+import useLocalStorageState from "use-local-storage-state";
 
 
 
@@ -11,8 +12,7 @@ export const Profile = () => {
 
   const { profileId } = useParams();
 
-  const localCelestialUser = localStorage.getItem("celestial_user");
-  const celestialUserObject = JSON.parse(localCelestialUser);
+  const [celestialUserObject, setCelestialUserObject] = useLocalStorageState("celestial_user")
   const currentUserProfileId = celestialUserObject.profileId;
 
   const canEdit = +profileId === currentUserProfileId;
