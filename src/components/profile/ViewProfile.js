@@ -32,7 +32,7 @@ export const ViewProfile = ({ data }) => {
       <div className="top">
         <img src={data?.picture} alt="profile picture" className="profile-pic" />
         <section className="top-right">
-        <section className="big-three">
+          <section className="big-three">
             <h2 className="name">{data?.displayName}</h2>
             <div>✦ <span className="unbounded">My Sun Sign:</span> {data?.sun?.name}</div>
             <div>✦ <span className="unbounded">My Moon Sign:</span> {data?.moon?.name}</div>
@@ -41,18 +41,18 @@ export const ViewProfile = ({ data }) => {
 
           <article className="sphere">
             <section className="all-sphere">
-            <h2 className="name">Compatible Friends</h2>
-            <section className="all-profiles">
-            {currentUserSphere.map(
-              (matchingSphere) => {
-                return <section className="sphere-profiles" key={matchingSphere.id}>
-                  <div><Link to={`/Profile/${matchingSphere?.profile?.id}`} ><img src={matchingSphere?.profile?.picture} alt="profile picture" className="profile-pictures" /></Link></div>
-                  <div>{matchingSphere?.profile?.displayName}</div>
-                </section>
-              }
-            )}
+              <h2 className="name">Compatible Friends</h2>
+              <section className="all-profiles">
+                {currentUserSphere.map(
+                  (matchingSphere) => {
+                    return <section className="sphere-profiles" key={matchingSphere.id}>
+                      <div><Link to={`/Profile/${matchingSphere?.profile?.id}`} ><img src={matchingSphere?.profile?.picture} alt="profile picture" className="profile-pictures" /></Link></div>
+                      <div>{matchingSphere?.profile?.displayName}</div>
+                    </section>
+                  }
+                )}
+              </section>
             </section>
-          </section>
           </article>
         </section>
 
@@ -69,7 +69,7 @@ export const ViewProfile = ({ data }) => {
             <div>{data?.sun?.trait}</div>
             <br></br>
             <div className="intro"> Born between {data?.sun?.dates}, {data?.sun?.name} is a {data?.sun?.mode?.name} {data?.sun?.element?.name} sign.</div>
-            <div>{data?.sun?.mode?.name} modality {data?.sun?.mode?.about}</div>
+            <div>{data?.sun?.mode?.name} modality {data?.sun?.mode?.about}</div><br></br>
             <div>{data?.sun?.element?.name} {data?.sun?.element?.about}</div>
             <br></br>
             <div className="intro">{data?.sun?.name} is ruled by {data?.sun?.planet?.name}.</div>

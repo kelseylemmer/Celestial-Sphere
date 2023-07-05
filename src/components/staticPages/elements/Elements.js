@@ -17,7 +17,7 @@ export const Elements = () => {
                 <br></br>
                 <div>In essence, Fire signs embody strength, self-assurance, creativity, and a fun-loving spirit. Nevertheless, when their fervor becomes too intense to handle, it's wise to step back and give them space to temper their flames.</div>
                 <br></br>
-                <div><span className="intro">Fire Signs:</span> <Link to={`/Aries`}>Aries →</Link>, <Link to={`/Leo`}>Leo →</Link>, and <Link to={`/Sagittarius`}>Sagittarius →</Link></div>
+                <div><span className="intro">Fire Signs:</span> <Link to={`/Signs/Aries`}>Aries →</Link>, <Link to={`/Signs/Leo`}>Leo →</Link>, and <Link to={`/Signs/Sagittarius`}>Sagittarius →</Link></div>
             </section>
             <section className="element">
                 <h1 className="details-header">	🜃 Earth</h1>
@@ -31,7 +31,7 @@ export const Elements = () => {
                 <br></br>
                 <div>In summary, Earth signs embody dependability, practicality, and conservatism, often accompanied by a certain materialistic inclination. Their feet are firmly planted on the ground, yet their eyes are fixed on the desired prize.</div>
                 <br></br>
-                <div><span className="intro">Earth Signs:</span> <Link to={`/Taurus`}>Taurus →</Link>, <Link to={`/Virgo`}>Virgo →</Link>, and <Link to={`/Capricorn`}>Capricorn →</Link></div>
+                <div><span className="intro">Earth Signs:</span> <Link to={`/Signs/Taurus`}>Taurus →</Link>, <Link to={`/Signs/Virgo`}>Virgo →</Link>, and <Link to={`/Signs/Capricorn`}>Capricorn →</Link></div>
             </section>
             <section className="element">
                 <h1 className="details-header">	🜁 Air</h1>
@@ -43,7 +43,7 @@ export const Elements = () => {
                 <br></br>
                 <div>In summary, Air signs are communicative, intellectual, clever, and fair. However, their temperament can oscillate, so it's important to beware of their occasional chill.</div>
                 <br></br>
-                <div><span className="intro">Air Signs:</span> <Link to={`/Gemini`}>Gemini →</Link>, <Link to={`/Libra`}>Libra →</Link>, and <Link to={`/Aquarius`}>Aquarius →</Link></div>
+                <div><span className="intro">Air Signs:</span> <Link to={`/Signs/Gemini`}>Gemini →</Link>, <Link to={`/Signs/Libra`}>Libra →</Link>, and <Link to={`/Signs/Aquarius`}>Aquarius →</Link></div>
             </section>
             <section className="element">
                 <h1 className="details-header">	🜄 Water</h1>
@@ -57,7 +57,7 @@ export const Elements = () => {
                 <br></br>
                 <div>In summary, Water signs are characterized by their emotional depth, empathy, receptivity, and profound sensitivity. They can oscillate between serene calmness and the force of torrential rain, evoking a wealth of emotions associated with this element.</div>
                 <br></br>
-                <div><span className="intro">Water Signs:</span> <Link to={`/Cancer`}>Cancer →</Link>, <Link to={`/Scorpio`}>Scorpio →</Link>, and <Link to={`/Pisces`}>Pisces →</Link></div>
+                <div><span className="intro">Water Signs:</span> <Link to={`/Signs/Cancer`}>Cancer →</Link>, <Link to={`/Signs/Scorpio`}>Scorpio →</Link>, and <Link to={`/Signs/Pisces`}>Pisces →</Link></div>
 
 
             </section>
