@@ -59,23 +59,27 @@ export const Signs = () => {
         <>
             <div className="page-container signs-container">
                 <h1 className="page-title sign-title">{signName}</h1>
-                <section className="quick-facts-container">
-                    {
-                        suns.map(
-                            (sunSignInfo) => {
-                                return <section className="quick-facts" key={`${sunSignInfo.id}`}>
-                                    <div className="quick-fact"><span className="intro">Dates:</span> {sunSignInfo?.dates}</div>
-                                    <div className="quick-fact"><span className="intro">House:</span> {sunSignInfo?.house?.name}</div>
-                                    <div className="quick-fact"><span className="intro">Planet:</span> {sunSignInfo?.planet?.name}</div>
-                                    <div className="quick-fact"><span className="intro">Element:</span> {sunSignInfo?.element?.name}</div>
-                                    <div className="quick-fact"><span className="intro">Modality:</span> {sunSignInfo?.mode?.name}</div>
-                                    <div className="quick-fact"><span className="intro">Symbol:</span> {sunSignInfo?.symbol}</div>
-                                    <div className="quick-fact"><span className="intro">Body Part:</span> {sunSignInfo?.body?.part}</div>
+                {
+                    suns.map(
+                        (sunSignInfo) => {
+                            return <div className="top">
+                                <img src={sunSignInfo?.picture} alt="profile picture" className="profile-pic" />
+                                <section className="top-right">
+                                    <section className="quick-facts-container"><section className="quick-facts" key={`${sunSignInfo.id}`}>
+                                        <div className="quick-fact"><span className="intro">Dates:</span> {sunSignInfo?.dates}</div>
+                                        <div className="quick-fact"><span className="intro">House:</span> {sunSignInfo?.house?.name}</div>
+                                        <div className="quick-fact"><span className="intro">Planet:</span> {sunSignInfo?.planet?.name}</div>
+                                        <div className="quick-fact"><span className="intro">Element:</span> {sunSignInfo?.element?.name}</div>
+                                        <div className="quick-fact"><span className="intro">Modality:</span> {sunSignInfo?.mode?.name}</div>
+                                        <div className="quick-fact"><span className="intro">Symbol:</span> {sunSignInfo?.symbol}</div>
+                                        <div className="quick-fact"><span className="intro">Body Part:</span> {sunSignInfo?.body?.part}</div>
+                                    </section>
+                                    </section>
                                 </section>
-                            }
-                        )
-                    }
-                </section>
+                            </div>
+                        }
+                    )
+                }
             </div>
         </>
 

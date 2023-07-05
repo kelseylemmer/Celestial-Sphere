@@ -1,0 +1,49 @@
+.container--register {
+    text-align: center;
+    background-color: white;
+    font-family: 'Unbounded';
+    color: #276451;
+}
+
+.form--login {
+    background-position-x: right;
+    z-index: 1;
+    min-height: 48rem;
+    /* min-width: 100rem;  */
+    background-color: white;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-color: #FAF6EC;
+}
+
+.button--close {
+    position: relative;
+    bottom: -2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #276451;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #276451;
+    text-align: center;
+}
+
+
+a {
+    color: #276451
+}
+
+a:visited {
+    color: #276451;
+}
+
+a:hover {
+    color: #d5fd56
+}
+
+a:active {
+    color: #d5fd56
+}
