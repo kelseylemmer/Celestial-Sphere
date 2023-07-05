@@ -40,7 +40,7 @@ export const NavBar = () => {
                         </li>
                         <li>
                             <Link to="/Elements">
-                                Elements + Modalities
+                                Elements
                             </Link>
                         </li>
                         <li>
