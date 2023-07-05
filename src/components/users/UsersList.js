@@ -76,7 +76,9 @@ export const UserList = () => {
       fetch(`http://localhost:8088/profiles/?_expand=sun&_expand=moon&_expand=rising&_expand=user`)
         .then(response => response.json())
         .then((profileArray) => {
-          setProfiles(profileArray)
+          //fiter out current user's profile from showing in userList
+          const filteredUserList = profileArray.filter(item => item.userId !== currentUserId)
+          setProfiles(filteredUserList)
         })
     },
     []
