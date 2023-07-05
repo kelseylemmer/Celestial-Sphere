@@ -2,10 +2,12 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+import useLocalStorageState from "use-local-storage-state";
 
 export const Login = () => {
     const [email, set] = useState("klemmer@gmail.com")
     const navigate = useNavigate()
+    const [user, setUser] = useLocalStorageState("celestial_user")
 
     const handleLogin = async (e) => {
         e.preventDefault()
@@ -33,7 +35,7 @@ export const Login = () => {
                 celestialUser.userId = foundProfiles[0].userId
             }
 
-            localStorage.setItem("celestial_user", JSON.stringify(celestialUser))
+            setUser(celestialUser)
 
             navigate("/Home")
         }
@@ -65,7 +67,7 @@ export const Login = () => {
                     </fieldset>
                 </form>
             </section>
-            
+
         </main>
     )
 }

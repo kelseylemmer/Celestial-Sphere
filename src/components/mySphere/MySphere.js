@@ -2,14 +2,15 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
 import "./mySphere.css";
+import useLocalStorageState from "use-local-storage-state";
 
 export const MySphere = () => {
 
     const [currentUserSphere, setCurrentUserSphere] = useState([])
+    const [user, setUser] = useLocalStorageState("celestial_user")
 
-    const localCelestialUser = localStorage.getItem("celestial_user");
-    const celestialUserObject = JSON.parse(localCelestialUser);
-    const currentUserId = celestialUserObject.userId;
+
+    const currentUserId = user.userId;
 
     useEffect(() => {
         fetch(`http://localhost:8088/userSpheres?_expand=profile`)
@@ -30,7 +31,7 @@ export const MySphere = () => {
                 (sphereObject) => {
                     return <Link to={`/Profile/${sphereObject?.profile?.id}`} key={sphereObject.id}><section className="sphere-profiles" >
                         <div><img src={sphereObject?.profile?.picture} alt="profile picture" className="profile-pics" /></div>
-                            <div>{sphereObject?.profile?.displayName}</div>
+                        <div>{sphereObject?.profile?.displayName}</div>
                     </section></Link>
                 }
 

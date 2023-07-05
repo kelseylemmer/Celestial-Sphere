@@ -12,9 +12,6 @@ export const ViewProfile = ({ data }) => {
     fetch(`http://localhost:8088/userSpheres?_expand=profile`)
       .then(response => response.json())
       .then(userSphereArray => {
-        // const localCelestialUser = localStorage.getItem("celestial_user");
-        // const celestialUserObject = JSON.parse(localCelestialUser);
-        // const currentUserId = celestialUserObject.userId;
 
         const filteredUserSphere = userSphereArray.filter(
           item =>

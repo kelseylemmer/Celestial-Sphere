@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./createProfile.css"
+import useLocalStorageState from "use-local-storage-state";
 
 export const ProfileForm = () => {
     const [profile, update] = useState({
@@ -12,13 +13,13 @@ export const ProfileForm = () => {
         displayName: ""
     });
 
-    const localCelestialUser = JSON.parse(localStorage.getItem("celestial_user"));
-    const currentUserId = localCelestialUser.id;
+    const [user, setUser] = useLocalStorageState("celestial_user")
+    const currentUserId = user.id;
 
     const [suns, setSuns] = useState([]);
     const [moons, setMoons] = useState([]);
     const [risings, setRisings] = useState([]);
-    const [updatedLocalCelestialUser, setUpdatedLocalCelestialUser] = useState(localCelestialUser);
+    const [updatedLocalCelestialUser, setUpdatedLocalCelestialUser] = useState(user);
 
     const navigate = useNavigate();
 
@@ -49,7 +50,7 @@ export const ProfileForm = () => {
                         profileId: createdProfile.id
                     };
 
-                    localStorage.setItem("celestial_user", JSON.stringify(updatedUser));
+                    setUser(updatedUser);
                     setUpdatedLocalCelestialUser(updatedUser);
 
                     navigate(`/profile/${createdProfile.id}`);
