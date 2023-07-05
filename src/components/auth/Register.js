@@ -23,6 +23,7 @@ export const Register = (props) => {
                 if (createdUser.hasOwnProperty("id")) {
                     localStorage.setItem("celestial_user", JSON.stringify({
                         id: createdUser.id,
+                        userId: createdUser.id,
                     }))
 
                     navigate("/Home")
@@ -53,9 +54,10 @@ export const Register = (props) => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
+
+        <div className="container--register">
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Celestial Sphere</h1>
+                <h1 className="register-title">Please Register for Celestial Sphere</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
                     <input onChange={updateUser}
@@ -75,10 +77,11 @@ export const Register = (props) => {
                         placeholder="Email address" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Register </button>
+                    <button type="submit" className="btn btn-primary"> Register →</button>
                 </fieldset>
             </form>
-        </main>
+        </div>
+
     )
 }
 

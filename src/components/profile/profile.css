@@ -116,7 +116,8 @@ h2.name {
     border-radius: 20px;
     padding: 20px;
 }
-.all-sphere{
+
+.all-sphere {
     display: flex;
     flex-direction: column;
 
@@ -131,9 +132,10 @@ h2.name {
     align-self: center;
     margin: 0px 0px 0px;
 }
-.all-profiles{
+
+.all-profiles {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
 }
 
@@ -141,14 +143,14 @@ h2.name {
     margin: 10px 10px 10px;
 }
 
-.top-right{
+.top-right {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     padding-left: 20px;
 }
 
-.top{
+.top {
     padding-top: 50px;
     align-content: center;
 }
